@@ -1,5 +1,6 @@
 # PUI homework
 
-Deployed website: https://github.com/nazmkf/pui-homework-template-nazm
+Deployed website: https://nazmkf.github.io/pui-homework-template-nazm
 
-Repository link: `add the URL to this repository`
+Repository link: https://github.com/nazmkf/pui-homework-template-nazm
+
