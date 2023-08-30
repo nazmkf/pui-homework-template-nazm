@@ -11,6 +11,7 @@ hr {
 .navSelected {
     text-align: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: yellow;
     font-weight: 700;
 }
 
@@ -36,6 +37,7 @@ h3 {
 .prod-card {
     margin: auto;
     max-width: 420px;
+    padding: 10px;
     height: auto;
     /* padding: 5px; */
     text-align: left;
@@ -44,6 +46,8 @@ h3 {
 
 .prod-card:hover {
     background-color: yellow;
+    text-decoration: underline;
+    font-weight: 900;
 }
 
 .productImageDiv {
@@ -63,5 +67,55 @@ h3 {
     background-color: transparent;
     width: 410px;
     height: 410px;
+}
+
+#productName {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+.productDetailCard {
+    margin: auto;
+    max-width: 420px;
+    padding: 10px;
+    height: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: transparent;
+}
+
+#productTextDetails {
+    max-width: 200px;
+    text-align: left;
+    display:block;
+    margin: 0 auto;
+}
+
+#glazing {
+    margin-top: 2px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 25px;
+    width: 250px;
+    border-style: solid;
+    color: black;
+}
+
+#packSize {
+    margin-top: 2px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 25px;
+    width: 250px;
+    border-style: solid;
+    color: black;
+}
+
+.callToAction {
+    color: rgb(0, 0, 0);
+    background-color:yellow;
+    width: 100px;
+    padding: 5px;
+}
+
+.priceAdd {
+    display:inline-block;
 
 }
