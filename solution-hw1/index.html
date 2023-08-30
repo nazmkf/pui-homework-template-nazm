@@ -4,15 +4,87 @@
 
   <head>
     <title>Nazm's Product Gallery</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   
   <body>
 
-    <h1>I am the solution to HW1!</h1>
+    <div> 
+      <img id="logo" src="../assets/logo/logo-01.svg" alt="Bun bun bake shop logo"/>
+    </div>
 
-    <p>
-        And I can link to <a href="./otherpage.html">other pages.</a>
-    </p>
+    <hr>
+
+    <!--Adding a nav bar to put any navigation links-->
+    <nav>
+      <p class="navSelected">PRODUCTS</p>
+      <p class="inactive">CART</p>
+    </nav>
+
+    <br>
+
+    <!--following is the code group for the product gallery-->
+    <div>
+      <p class="pageHeader"> Our hand-made cinnamon rolls</p>
+      
+      <!--Cards for individual product-->
+      <section class="prod-card">
+        <div class="productImageDiv">
+          <img id="productImage" src="../assets/products/original-cinnamon-roll.jpg" alt="Original Cinnamon Roll"/>
+        </div>
+
+        <p>Original Cinnamon roll</p>
+        <p>$ 2.49</p>
+      </section>
+
+      <section class="prod-card">
+        <div class="productImageDiv">
+          <img id="productImage" src="../assets/products/apple-cinnamon-roll.jpg" alt="Apple Cinnamon Roll"/>
+        </div>
+
+        <p>Apple Cinnamon roll</p>
+        <p>$ 3.49</p>
+      </section>
+
+      <section class="prod-card">
+        <div class="productImageDiv">
+          <img id="productImage" src="../assets/products/raisin-cinnamon-roll.jpg" alt="Raisin Cinnamon Roll"/>
+        </div>
+
+        <p>Raisin Cinnamon roll</p>
+        <p>$ 2.99</p>
+      </section>
+
+      <section class="prod-card">
+        <div class="productImageDiv">
+          <img id="productImage" src="../assets/products/walnut-cinnamon-roll.jpg" alt="Walnut Cinnamon Roll"/>
+        </div>
+
+        <p>Walnut Cinnamon roll</p>
+        <p>$ 3.49</p>
+      </section>
+
+      <section class="prod-card">
+        <div class="productImageDiv">
+          <img id="productImage" src="../assets/products/double-chocolate-cinnamon-roll.jpg" alt="Double-chocolate Cinnamon Roll"/>
+        </div>
+
+        <p>Double-chocolate Cinnamon roll</p>
+        <p>$ 3.99</p>
+      </section>
+
+      <section class="prod-card">
+        <div class="productImageDiv">
+          <img id="productImage" src="../assets/products/strawberry-cinnamon-roll.jpg" alt="Strawberry Cinnamon Roll"/>
+        </div>
+
+        <p>Strawberry Cinnamon roll</p>
+        <p>$ 3.99</p>
+      </section>
+
+      
+
+    </div>
 
   </body>
 </html>
