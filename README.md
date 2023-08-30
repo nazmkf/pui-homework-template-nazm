@@ -1,5 +1,5 @@
 # PUI homework
 
-Deployed website: `add the URL to your deployed website`
+Deployed website: https://github.com/nazmkf/pui-homework-template-nazm
 
 Repository link: `add the URL to this repository`
