@@ -10,16 +10,23 @@
   <body>
 
     <div> 
+      <a href="index.html">
       <img id="logo" src="../assets/logo/logo-01.svg" alt="Bun bun bake shop logo"/>
+      </a>
+
     </div>
 
     <hr>
 
     <!--Adding a nav bar to put any navigation links-->
-    <nav>
-      <p class="navSelected">PRODUCTS</p>
-      <p class="inactive">CART</p>
-    </nav>
+      <div>
+        <a href="index.html">
+          <p class="navSelected">PRODUCTS</p>
+        </a>
+        <a href="cart-page.html">
+          <p class="inactive">CART</p>
+        </a>
+      </div>
 
     <br>
 
@@ -28,9 +35,9 @@
       <p class="pageHeader"> Original cinnamon roll</p>
       
       <!--Cards for product details-->
-      <section class="productDetailCard">
+      <section class="productImageDiv">
         <div class="productImageDiv">
-          <img id="productImage" src="../assets/products/original-cinnamon-roll.jpg" alt="Original Cinnamon Roll"/>
+          <img id="productDetailImage" src="../assets/products/original-cinnamon-roll.jpg" alt="Original Cinnamon Roll"/>
         </div>
 
         <!-- Dropdown menu options -->
@@ -60,7 +67,8 @@
 
           <div class="priceAdd">
             <p> $ 2.49 </p>
-            <button class="callToAction">Add to cart</button>
+            <!-- <a href="cart-page.html" -->
+            <a href="cart-page.html"><button class="callToAction">Add to cart</button></a>
           </div>
 
       </section>

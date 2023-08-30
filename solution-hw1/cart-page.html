@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+
+  <head>
+    <title>Product details </title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <div> 
+      <a href="index.html">
+      <img id="logo" src="../assets/logo/logo-01.svg" alt="Bun bun bake shop logo"/>
+      </a>
+
+    </div>
+
+    <hr>
+
+    <!--Adding a nav bar to put any navigation links-->
+    <div>
+        <a href="index.html">
+          <p class="navSelected">PRODUCTS</p>
+        </a>
+        <a href="cart-page.html">
+          <p class="inactive">CART</p>
+        </a>
+    </div>
+
+    <br>
+
+    <!--following is the code group for the product gallery-->
+    <div>
+      <p class="pageHeader">Shopping Cart</p>
+    </div>
+
+    <!--Cards for product details-->
+    <section class="shoppingList">
+        <div class="productCartImageDiv">
+            <img id="productCartImage" src="../assets/products/original-cinnamon-roll.jpg" alt="Original Cinnamon Roll"/>
+        </div>
+    
+        <!-- item one text -->
+        <div class="productCartDetails">
+            <p id="removeText">Remove</p>
+            <p> Original Cinnamon Roll
+                <br> Glazing: Keep original
+                <br> Pack size: 1
+            </p>
+            <p id="price">$ 2.49</p>
+        </div>
+
+        <br> <br> <br>
+
+        <div class="productCartImageDiv">
+            <img id="productCartImage" src="../assets/products/double-chocolate-cinnamon-roll.jpg" alt="Double-chocolate Cinnamon Roll"/>
+        </div>
+
+        <!-- item two text -->
+        <div class="productCartDetails">
+            <p id="removeText">Remove</p>
+            <p> Double Chocolate Cinnamon Roll
+                <br> Glazing: Sugar milk
+                <br> Pack size: 6
+            </p>
+            <p id="price">$ 27.45</p>
+        </div>
+    
+        <hr class="horizontalLine"> 
+
+        <!-- total and checkout button -->
+        <div class="productCartDetails">
+            <p id="price">Total: $ 29.94 </p>
+            <button class="callToAction">Checkout</button>
+        </div>
+    
+
+
+  </body>
+</html>
