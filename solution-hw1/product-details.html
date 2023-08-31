@@ -19,14 +19,14 @@
     <hr>
 
     <!--Adding a nav bar to put any navigation links-->
-      <div>
-        <a href="index.html">
-          <p class="navSelected">PRODUCTS</p>
-        </a>
-        <a href="cart-page.html">
-          <p class="inactive">CART</p>
-        </a>
-      </div>
+    <div class="navDiv">
+      <a href="index.html">
+        <p class="textActive">PRODUCTS</p>
+      </a>
+      <a href="cart-page.html">
+        <p class="textInactive">CART</p>
+      </a>
+    </div>
 
     <br>
 
@@ -35,40 +35,39 @@
       <p class="pageHeader"> Original cinnamon roll</p>
       
       <!--Cards for product details-->
-      <section class="productImageDiv">
-        <div class="productImageDiv">
-          <img id="productDetailImage" src="../assets/products/original-cinnamon-roll.jpg" alt="Original Cinnamon Roll"/>
+      <section class="prodImgDiv">
+        <div class="prodImgDiv">
+          <img id="prodDetailImg" src="../assets/products/original-cinnamon-roll.jpg" alt="Original Cinnamon Roll"/>
         </div>
 
         <!-- Dropdown menu options -->
-        <div id="productTextDetails">
+        <div id="prodTextDetails">
 
           <p> Customize our delicious, hand-made cinnamon roll to your liking</p>
+          
+          <section class="dropSection">
+            <label for="glazing">Glazing:</label>
+            <select name="glazing" id="glazing">
+              <option value="original">Keep original</option>
+              <option value="sugar">Sugar milk</option>
+              <option value="vanilla">Vanilla milk</option>
+              <option value="chocolate">Double chocolate</option>
+            </select>
+          </section>
 
-          <label for="glazing">Glazing:</label>
-          <br>
-          <select name="glazing" id="glazing">
-            <option value="original">Keep original</option>
-            <option value="sugar">Sugar milk</option>
-            <option value="vanilla">Vanilla milk</option>
-            <option value="chocolate">Double chocolate</option>
-          </select>
-
-          <br><br>
-
-          <label for="packSize">Pack Size:</label>
-          <br>
-          <select name="packSize" id="packSize">
-            <option value="1">1</option>
-            <option value="3">3</option>
-            <option value="6">6</option>
-            <option value="12">12</option>
-          </select>
+          <section class="dropSection">
+            <label for="packSize">Pack Size:</label>
+            <select name="packSize" id="packSize">
+              <option value="1">1</option>
+              <option value="3">3</option>
+              <option value="6">6</option>
+              <option value="12">12</option>
+            </select>
+          </section>
 
           <div class="priceAdd">
             <p> $ 2.49 </p>
-            <!-- <a href="cart-page.html" -->
-            <a href="cart-page.html"><button class="callToAction">Add to cart</button></a>
+            <a href="cart-page.html"><button class="actionButton">Add to cart</button></a>
           </div>
 
       </section>
