@@ -9,23 +9,19 @@
   
   <body>
 
-    <div> 
+    <section> 
       <a href="index.html">
       <img id="logo" src="../assets/logo/logo-01.svg" alt="Bun bun bake shop logo"/>
       </a>
-    </div>
+    </section>
 
     <hr>
 
     <!--Adding a nav bar to put any navigation links-->
-    <section class="navDiv">
-      <a href="index.html">
-        <p class="textActive">PRODUCTS</p>
-      </a>
-      <a href="cart-page.html">
-        <p class="textInactive">CART</p>
-      </a>
-    </section>
+    <nav class="navDiv">
+      <p><span class="textActive"><a href="index.html">PRODUCTS</a></span></p>
+      <p><span class="textInactive"><a href="./cart-page.html">CART</a></span></p>
+    </nav>
 
     <!--Following is the code group for the product gallery-->
     <section>
@@ -37,9 +33,11 @@
           <div class="prodImgDiv">
             <img id="prodImg" src="../assets/products/original-cinnamon-roll.jpg" alt="Original Cinnamon Roll"/>
           </div>
-
-          <p class="textUnderline">Original Cinnamon roll</p> 
-          <p>$ 2.49</p>
+          
+          <div class="cardText">
+            <p class="textUnderline">Original Cinnamon roll</p> 
+            <p class="textLight">$ 2.49</p>
+          </div>
         </a>
       </section>
 
@@ -51,8 +49,10 @@
             <img id="prodImg" src="../assets/products/apple-cinnamon-roll.jpg" alt="Apple Cinnamon Roll"/>
           </div>
 
-          <p class="textUnderline">Apple Cinnamon roll</p>
-          <p>$ 3.49</p>
+          <div class="cardText">
+            <p class="textUnderline">Apple Cinnamon roll</p>
+            <p class="textLight">$ 3.49</p>
+          </div>
         </a>
       </section>
 
@@ -64,8 +64,10 @@
             <img id="prodImg" src="../assets/products/raisin-cinnamon-roll.jpg" alt="Raisin Cinnamon Roll"/>
           </div>
 
-          <p class="textUnderline"> Raisin Cinnamon roll</p>
-          <p>$ 2.99</p>
+          <div class="cardText">
+            <p class="textUnderline"> Raisin Cinnamon roll</p>
+            <p class="textLight">$ 2.99</p>
+          </div>
         </a>
       </section>
 
@@ -75,8 +77,10 @@
             <img id="prodImg" src="../assets/products/walnut-cinnamon-roll.jpg" alt="Walnut Cinnamon Roll"/>
           </div>
 
-          <p class="textUnderline">Walnut Cinnamon roll</p>
-          <p>$ 3.49</p>
+          <div class="cardText">
+            <p class="textUnderline">Walnut Cinnamon roll</p>
+            <p class="textLight">$ 3.49</p>
+          </div>
         </a>
       </section>
 
@@ -86,8 +90,10 @@
             <img id="prodImg" src="../assets/products/double-chocolate-cinnamon-roll.jpg" alt="Double-chocolate Cinnamon Roll"/>
           </div>
 
-          <p class="textUnderline">Double-chocolate Cinnamon roll</p>
-          <p>$ 3.99</p>
+          <div class="cardText">
+            <p class="textUnderline">Double-chocolate Cinnamon roll</p>
+            <p class="textLight">$ 3.99</p>
+          </div>
         </a>
       </section>
 
@@ -97,8 +103,10 @@
             <img id="prodImg" src="../assets/products/strawberry-cinnamon-roll.jpg" alt="Strawberry Cinnamon Roll"/>
           </div>
 
-          <p class="textUnderline">Strawberry Cinnamon roll</p>
-          <p>$ 3.99</p>
+          <div class="cardText">
+            <p class="textUnderline">Strawberry Cinnamon roll</p>
+            <p class="textLight">$ 3.99</p>
+          </div>
         </a>
       </section>
 
