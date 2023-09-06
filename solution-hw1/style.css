@@ -205,6 +205,10 @@ h3 {
     align-items: baseline;
 }
 
+.inlineSpace {
+    margin-left: 10px;
+}
+
 /* div for the cart page */
 .shopping list {
     max-width: 400px;
