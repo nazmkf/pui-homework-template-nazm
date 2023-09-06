@@ -33,7 +33,11 @@ p {
 .textUnderline {
     text-decoration: underline;
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 2px;
+}
+
+.textLight {
+    font-weight: normal;
 }
 
 .textActive{
@@ -62,10 +66,6 @@ h3 {
     font-weight: bold;
     font-family: "PT Sans";
     text-align: center;
-}
-
-.textLight {
-    font-weight: normal;
 }
 
 
@@ -222,7 +222,7 @@ h3 {
     text-align: center;
     border: 5px;
     border-color: black;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .prodCartDetails {
