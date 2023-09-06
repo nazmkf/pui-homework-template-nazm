@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta charset="UTF-8">
 
+  <!-- title and linking css -->  
   <head>
+    <meta charset="UTF-8">
     <title>Product details </title>
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
 
-    <section> 
+    <!-- division for logo with an id linking it to the products page -->
+    <div> 
       <a href="./index.html">
       <img id="logo" src="../assets/logo/logo-01.svg" alt="Bun bun bake shop logo"/>
       </a>
-    </section>
+    </div>
 
+    <!-- horizontal line -->
     <hr>
 
-    <!--Adding a nav bar to put any navigation links-->
+    <!-- addition of the nav bar to add navigation links -->
     <nav class="navDiv">
       <p><span class="textActive"><a href="./index.html">PRODUCTS</a></span></p>
       <p><span class="textInactive"><a href="./cart-page.html">CART</a></span></p>
@@ -25,52 +28,55 @@
 
     <br>
 
-    <!--following is the code group for the product gallery-->
+    <!-- product list with individual cards-->
     <div>
-      <p class="pageHeader">Shopping Cart</p>
+        <p class="pageHeader">Shopping Cart</p>
     </div>
 
-    <!--Cards for product details-->
-    <section class="shoppingList">
-        <div class="prodCartImgDiv">
-            <img id="prodCartImg" src="../assets/products/original-cinnamon-roll.jpg" alt="Original Cinnamon Roll"/>
-        </div>
+
+    <div class="shoppingList">
+
+      <!-- individual product card 01-->
+      <div class="prodCartImgDiv">
+           <img class="prodCartImg" src="../assets/products/original-cinnamon-roll.jpg" alt="Original Cinnamon Roll"/>
+      </div>
     
-        <!-- item one text -->
-        <div class="prodCartDetails">
-            <p id="removeText">Remove</p>
-            <p> Original Cinnamon Roll
-                <br> Glazing: Keep original
-                <br> Pack size: 1
-            </p>
-            <p id="price">$ 2.49</p>
-        </div>
+      <!-- text for item 01-->
+      <div class="prodCartDetails">
+          <p class="removeText">Remove</p>
+          <p> Original Cinnamon Roll
+              <br> Glazing: Keep original
+              <br> Pack size: 1
+          </p>
+          <p class="price">$ 2.49</p>
+      </div>
 
-        <br> <br> <br>
+      <br> <br> <br>
 
-        <div class="prodCartImgDiv">
-            <img id="prodCartImg" src="../assets/products/double-chocolate-cinnamon-roll.jpg" alt="Double-chocolate Cinnamon Roll"/>
-        </div>
+      <!-- individual product card 02-->
+      <div class="prodCartImgDiv">
+        <img class="prodCartImg" src="../assets/products/double-chocolate-cinnamon-roll.jpg" alt="Double-chocolate Cinnamon Roll"/>
+      </div>
 
-        <!-- item two text -->
-        <div class="prodCartDetails">
-            <p id="removeText">Remove</p>
-            <p> Double Chocolate Cinnamon Roll
-                <br> Glazing: Sugar milk
-                <br> Pack size: 6
-            </p>
-            <p id="price">$ 27.45</p>
-        </div>
+      <!-- text for item 02 -->
+      <div class="prodCartDetails">
+        <p class="removeText">Remove</p>
+        <p> Double Chocolate Cinnamon Roll
+          <br> Glazing: Sugar milk
+          <br> Pack size: 6
+        </p>
+        <p class="price">$ 27.45</p>
+      </div>
     
-        <hr class="horizontalLine"> 
+      <hr class="horizontalLine"> 
 
-        <!-- total and checkout button -->
-        <div class="prodCartDetails">
-            <p id="price">Total: $ 29.94 </p>
-            <button class="actionButton">Checkout</button>
-        </div>
-    
+      <!-- div for total and checkout button -->
+      <div class="prodCartDetails">
+        <p class="price">Total: $ 29.94 </p>
+        <button class="actionButton">Checkout</button>
+      </div>
 
-
+    </div>
   </body>
+
 </html>

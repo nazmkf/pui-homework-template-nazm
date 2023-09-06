@@ -1,52 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta charset="UTF-8">
 
+  <!-- title and linking css -->
   <head>
+    <meta charset="UTF-8">
     <title>Nazm's Product Gallery</title>
     <link rel="stylesheet" href="style.css">
   </head>
   
   <body>
 
-    <section> 
-      <a href="index.html">
+    <!-- division for logo with an id linking it to the products page -->
+    <div> 
+      <a href="./index.html">
       <img id="logo" src="../assets/logo/logo-01.svg" alt="Bun bun bake shop logo"/>
       </a>
-    </section>
-
+    </div>
+    
+    <!-- horizontal line -->
     <hr>
 
-    <!--Adding a nav bar to put any navigation links-->
+    <!-- addition of the nav bar to add navigation links -->
     <nav class="navDiv">
       <p><span class="textActive"><a href="index.html">PRODUCTS</a></span></p>
       <p><span class="textInactive"><a href="./cart-page.html">CART</a></span></p>
     </nav>
 
-    <!--Following is the code group for the product gallery-->
-    <section>
+    <!-- product gallery div with all individual product cards-->
+    <div>
       <p class="pageHeader"> Our hand-made cinnamon rolls</p>
       
-      <!--Cards for individual product-->
-      <section class="prodCard">
+      <!-- individual product card 01 -->
+      <div class="prodCard">
+        <!-- linking the card with an anchor tag -->
         <a href="product-details.html">
+
+          <!-- div for the image for alignment -->
           <div class="prodImgDiv">
-            <img id="prodImg" src="../assets/products/original-cinnamon-roll.jpg" alt="Original Cinnamon Roll"/>
+            <img class="prodImg" src="../assets/products/original-cinnamon-roll.jpg" alt="Original Cinnamon Roll"/>
           </div>
           
+          <!-- div for the title & price of the product -->
           <div class="cardText">
             <p class="textUnderline">Original Cinnamon roll</p> 
             <p class="textLight">$ 2.49</p>
           </div>
         </a>
-      </section>
+      </div>
 
 
-
-      <section class="prodCard">
+      <!-- individual product card 02 -->
+      <div class="prodCard">
         <a href="product-details.html">
           <div class="prodImgDiv">
-            <img id="prodImg" src="../assets/products/apple-cinnamon-roll.jpg" alt="Apple Cinnamon Roll"/>
+            <img class="prodImg" src="../assets/products/apple-cinnamon-roll.jpg" alt="Apple Cinnamon Roll"/>
           </div>
 
           <div class="cardText">
@@ -54,14 +61,14 @@
             <p class="textLight">$ 3.49</p>
           </div>
         </a>
-      </section>
+      </div>
 
 
-
-      <section class="prodCard">
+      <!-- individual product card 03 -->
+      <div class="prodCard">
         <a href="product-details.html">
           <div class="prodImgDiv">
-            <img id="prodImg" src="../assets/products/raisin-cinnamon-roll.jpg" alt="Raisin Cinnamon Roll"/>
+            <img class="prodImg" src="../assets/products/raisin-cinnamon-roll.jpg" alt="Raisin Cinnamon Roll"/>
           </div>
 
           <div class="cardText">
@@ -69,12 +76,14 @@
             <p class="textLight">$ 2.99</p>
           </div>
         </a>
-      </section>
+      </div>
 
-      <section class="prodCard">
+
+      <!-- individual product card 04 -->
+      <div class="prodCard">
         <a href="product-details.html">
           <div class="prodImgDiv">
-            <img id="prodImg" src="../assets/products/walnut-cinnamon-roll.jpg" alt="Walnut Cinnamon Roll"/>
+            <img class="prodImg" src="../assets/products/walnut-cinnamon-roll.jpg" alt="Walnut Cinnamon Roll"/>
           </div>
 
           <div class="cardText">
@@ -82,12 +91,14 @@
             <p class="textLight">$ 3.49</p>
           </div>
         </a>
-      </section>
+      </div>
 
-      <section class="prodCard">
+
+      <!-- individual product card 05 -->
+      <div class="prodCard">
         <a href="product-details.html">
           <div class="prodImgDiv">
-            <img id="prodImg" src="../assets/products/double-chocolate-cinnamon-roll.jpg" alt="Double-chocolate Cinnamon Roll"/>
+            <img class="prodImg" src="../assets/products/double-chocolate-cinnamon-roll.jpg" alt="Double-chocolate Cinnamon Roll"/>
           </div>
 
           <div class="cardText">
@@ -95,12 +106,14 @@
             <p class="textLight">$ 3.99</p>
           </div>
         </a>
-      </section>
+      </div>
 
-      <section class="prodCard">
+
+      <!-- individual product card 06 -->
+      <div class="prodCard">
         <a href="product-details.html">
           <div class="prodImgDiv">
-            <img id="prodImg" src="../assets/products/strawberry-cinnamon-roll.jpg" alt="Strawberry Cinnamon Roll"/>
+            <img class="prodImg" src="../assets/products/strawberry-cinnamon-roll.jpg" alt="Strawberry Cinnamon Roll"/>
           </div>
 
           <div class="cardText">
@@ -108,9 +121,9 @@
             <p class="textLight">$ 3.99</p>
           </div>
         </a>
-      </section>
+      </div>
 
     </div>
-
   </body>
+
 </html>

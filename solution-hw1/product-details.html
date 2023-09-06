@@ -1,44 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta charset="UTF-8">
 
+  <!-- title and linking css -->  
   <head>
+    <meta charset="UTF-8">
     <title>Product details </title>
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
 
-    <section> 
-      <a href="index.html">
+    <!-- division for logo with an id linking it to the products page -->
+    <div> 
+      <a href="./index.html">
       <img id="logo" src="../assets/logo/logo-01.svg" alt="Bun bun bake shop logo"/>
       </a>
-    </section>
+    </div>
 
+    <!-- horizontal line -->
     <hr> 
 
-    <!--Adding a nav bar to put any navigation links-->
+    <!-- addition of the nav bar to add navigation links -->
     <nav class="navDiv">
       <p><span class="textActive"><a href="./index.html">PRODUCTS</a></span></p>
       <p><span class="textInactive"><a href="./cart-page.html">CART</a></span></p>
     </nav>
 
-    <!--following is the code group for the product gallery-->
-    <section>
+    <!-- main div for the product details -->
+    <div>
       <p class="pageHeader"> Original cinnamon roll</p>
       
       <!--Cards for product details-->
-      <section class="prodImgDiv">
+      <div class="prodImgDiv">
+
         <div class="prodImgDiv">
           <img id="prodDetailImg" src="../assets/products/original-cinnamon-roll.jpg" alt="Original Cinnamon Roll"/>
         </div>
 
-        <!-- Dropdown menu options -->
+        <!-- dropdown menu options -->
         <div id="prodTextDetails">
-
           <p> Customize our delicious, hand-made cinnamon roll to your liking</p>
           
-          <section class="dropSection">
+          <!-- dropdown 01 div -->
+          <div class="dropSection">
             <label for="glazing">Glazing:</label>
             <select name="glazing" id="glazing">
               <option value="original">Keep original</option>
@@ -46,9 +50,10 @@
               <option value="vanilla">Vanilla milk</option>
               <option value="chocolate">Double chocolate</option>
             </select>
-          </section>
+          </div>
 
-          <section class="dropSection">
+          <!-- dropdown 02 div -->
+          <div class="dropSection">
             <label for="packSize">Pack Size:</label>
             <select name="packSize" id="packSize">
               <option value="1">1</option>
@@ -56,14 +61,22 @@
               <option value="6">6</option>
               <option value="12">12</option>
             </select>
-          </section>
+          </div>
 
+          <!-- div for the price and button to align them accurately -->
           <div class="priceAdd">
-            <p class="textLight"> $ 2.49 </p>
-            <a href="cart-page.html"><button class="actionButton">Add to cart</button></a>
+            <p> $ 2.49 </p>
+            <button class="actionButton">Add to cart</button>
+
+            <!-- this following code is an error, in an attempt to link the button which I understand is wrong. 
+              <a href="cart-page.html"><button class="actionButton">Add to cart</button></a> -->
+
           </div>
         </div>
 
-      </section>
+      </div>
+    </div>
+  
   </body>
+
 </html>

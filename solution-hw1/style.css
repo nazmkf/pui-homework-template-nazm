@@ -3,9 +3,9 @@
 }
 
 hr {
+    background: rgb(0, 0, 0);
     height: 5px;
     border: none;
-    background: rgb(0, 0, 0);
 }
 
 a {
@@ -22,7 +22,6 @@ a:hover {
 p {
     padding-top: 0px;
     margin-top: 0px;
-    /* margin-bottom: 10px; */
 }
 
 .textUnderline {
@@ -33,55 +32,54 @@ p {
 
 .navDiv {
     text-align: center;
+    width: auto;
     margin-bottom: 50px;
     margin-top: 20px;
-    width: auto;
-    /* margin: auto; */
 }
 
 .textActive{
-    background-color: yellow;
+    background-color: rgb(255, 255, 0);
     font-size: 22px;
-    font-weight: 700;
+    font-weight: bold;
     font-family: "PT Sans";
 }
 
 .textInactive {
     font-size: 22px;
-    font-weight: 100;
+    font-weight: lighter;
     font-family: "PT Sans";
     text-align: center;
 }
 
 .pageHeader {
-    text-align: center;
-    font-family: "PT Sans";
-    font-weight: 100;
     font-size: 25px;
+    text-align: center;
+    font-weight: lighter;
+    font-family: "PT Sans";
     margin-bottom: 20px;
 }
 
 h3 {
-    text-align: center;
+    font-weight: bold;
     font-family: "PT Sans";
-    font-weight: 100px;
+    text-align: center;
 }
 
 .prodCard {
-    height: auto;
+    font-family: "PT Sans";
     text-align: left;
+    max-width: 420px;
+    height: auto;
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 25px;
-    max-width: 420px;
     padding: 5px;
-    font-family: "PT Sans";
 }
 
 .prodCard:hover {
-    font-weight: 900;
-    background-color: yellow;
+    background-color: rgb(255, 255, 0);
+    font-weight: bold;
 }
 
 .cardText {
@@ -94,18 +92,18 @@ h3 {
 }
 
 .prodImgDiv {
+    border-color: rgb(0, 0, 0);
+    background-color: transparent;
     text-align: center;
     border: 5px;
-    border-color: black;
-    background-color: transparent;
     margin-bottom: 0px;
     padding-top: 5px;
 }
 
-#prodImg {
+.prodImg {
     border: 3px;
     border-style: solid;
-    border-color: black;
+    border-color: rgb(0, 0, 0);
     background-color: transparent;
     width: 400px;
     height: 400px;
@@ -114,25 +112,25 @@ h3 {
 #prodDetailImg {
     border: 3px;
     border-style: solid;
-    border-color: black;
+    border-color: rgb(0, 0, 0);
     background-color: transparent;
     width: 600px;
     height: 600px;
 }
 
 .prodDetailCard {
-    margin: auto;
-    max-width: 420px;
-    padding: 10px;
-    height: auto;
-    font-family: "PT Sans";
     background-color: transparent;
+    font-family: "PT Sans";
+    max-width: 420px;
+    height: auto;
+    margin: auto;
+    padding: 10px;
 }
 
 #prodTextDetails {
-    max-width: 200px;
     font-family: "PT Sans";
     text-align: left;
+    max-width: 200px;
     display: block;
     padding: 20px;
     margin: 0 auto;
@@ -143,44 +141,41 @@ h3 {
 }
 
 #glazing {
-    font-family: "PT Sans";
+    color: rgb(0, 0, 0);
     font-size: 15px;
-    border-style: solid;
-    color: black;
-    margin-top: 2px;
+    font-family: "PT Sans";
     height: 25px;
     width: 200px;
+    border-style: solid;
+    margin-top: 2px;
 }
 
 #packSize {
-    font-family: "PT Sans";
+    color: rgb(0, 0, 0);
     font-size: 15px;
-    border-style: solid;
-    color: black;
-    margin-top: 2px;
+    font-family: "PT Sans";
     height: 25px;
     width: 200px;
+    border-style: solid;
+    margin-top: 2px;
 }
 
 .actionButton {
     color: rgb(0, 0, 0);
+    background-color:rgb(255, 255, 0);
     font-weight: bold;
-    background-color:yellow;
     width: 120px;
     height: 30px;
-    padding: 5px;
-    margin-left: 15px;
 }
 
 .actionButton:hover {
+    color: rgb(0, 0, 0);
+    background-color:rgb(255, 255, 0);
+    font-weight: bold;
     text-decoration: none;
     cursor: pointer;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    background-color:yellow;
-    width: 120x;
+    width: 120px;
     height: 30px;
-    padding: 5px;
 }
 
 .priceAdd {
@@ -190,6 +185,7 @@ h3 {
     width: 200px;
     font-size: 14px;
     margin-top: 45px;
+    align-items: baseline;
 }
 
 .shopping list {
@@ -209,30 +205,29 @@ h3 {
     font-size: 22px;
     font-family: "PT Sans";
     text-align: center;
-    display:block;
+    display: block;
     margin-bottom: 25px;
-    /* margin-top: 25px; */
 }
 
-#prodCartImg {
+.prodCartImg {
     border: 3px;
     border-style: solid;
-    border-color: black;
+    border-color: rgb(0, 0, 0);
     background-color: transparent;
     width: 200px;
     height: 200px;
 }
 
-#removeText {
-    text-align: center;
+.removeText {
     font-size: 15px;
     font-weight: 500;
+    text-align: center;
 }
 
-#price {
-    text-align: center;
+.price {
     font-size: 25px;
     font-weight: 400;
+    text-align: center;
 }
 
 .horizontalLine {
