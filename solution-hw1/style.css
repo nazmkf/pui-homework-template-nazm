@@ -217,12 +217,12 @@ h3 {
 }
 
 /* alignment for the image and text div */
-.prodCartImgDiv {
+.prodCartDiv {
     background-color: transparent;
     text-align: center;
     border: 5px;
     border-color: black;
-    margin-bottom: 80px;
+    margin-bottom: 120px;
 }
 
 .prodCartDetails {
