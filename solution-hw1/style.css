@@ -1,24 +1,30 @@
+
+/* sizing the logo*/
 #logo {
     width: 400px;
 }
 
+/* horizontal line style */
 hr {
     background: rgb(0, 0, 0);
     height: 5px;
     border: none;
 }
 
+/* anchor tag style for all links */
 a {
     color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
+/* anchor tag style for on hover */
 a:hover {
     color: rgb(0, 0, 0);
     text-decoration: none;
     cursor:pointer;
 }
 
+/* all text styles (paragraph, header, etc) */
 p {
     padding-top: 0px;
     margin-top: 0px;
@@ -28,13 +34,6 @@ p {
     text-decoration: underline;
     padding-top: 5px;
     padding-bottom: 5px;
-}
-
-.navDiv {
-    text-align: center;
-    width: auto;
-    margin-bottom: 50px;
-    margin-top: 20px;
 }
 
 .textActive{
@@ -52,7 +51,7 @@ p {
 }
 
 .pageHeader {
-    font-size: 25px;
+    font-size: 28px;
     text-align: center;
     font-weight: lighter;
     font-family: "PT Sans";
@@ -65,6 +64,20 @@ h3 {
     text-align: center;
 }
 
+.textLight {
+    font-weight: normal;
+}
+
+
+/* alignment of the navigation div */
+.navDiv {
+    text-align: center;
+    width: auto;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+/* main card div */
 .prodCard {
     font-family: "PT Sans";
     text-align: left;
@@ -87,10 +100,8 @@ h3 {
     margin: auto;
 }
 
-.textLight {
-    font-weight: normal;
-}
 
+/* alignment of the image containers */
 .prodImgDiv {
     border-color: rgb(0, 0, 0);
     background-color: transparent;
@@ -109,6 +120,7 @@ h3 {
     height: 400px;
 }
 
+/* alingment of the divs of the detail page */
 #prodDetailImg {
     border: 3px;
     border-style: solid;
@@ -136,6 +148,7 @@ h3 {
     margin: 0 auto;
 }
 
+/* dropdown menu alignment and styling */
 .dropSection {
     margin-top: 35px;
 }
@@ -160,6 +173,8 @@ h3 {
     margin-top: 2px;
 }
 
+
+/* button styles */
 .actionButton {
     color: rgb(0, 0, 0);
     background-color:rgb(255, 255, 0);
@@ -178,6 +193,8 @@ h3 {
     height: 30px;
 }
 
+
+/* div for inline box alignment  */
 .priceAdd {
     vertical-align: center;
     display: inline-flex;
@@ -188,17 +205,20 @@ h3 {
     align-items: baseline;
 }
 
+/* div for the cart page */
 .shopping list {
     max-width: 400px;
     display:block;
     margin: 0 auto;
 }
 
+/* alignment for the image and text div */
 .prodCartImgDiv {
     background-color: transparent;
     text-align: center;
     border: 5px;
     border-color: black;
+    margin-bottom: 80px;
 }
 
 .prodCartDetails {
@@ -206,6 +226,7 @@ h3 {
     font-family: "PT Sans";
     text-align: center;
     display: block;
+    margin-top: 25px;
     margin-bottom: 25px;
 }
 
@@ -224,6 +245,7 @@ h3 {
     text-align: center;
 }
 
+/* div for alignment for the total and price div */
 .price {
     font-size: 25px;
     font-weight: 400;
