@@ -5,77 +5,77 @@
   <head>
     <meta charset="UTF-8">
     <title>Product details </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
   </head>
 
   <body>
 
     <!-- division for logo with an id linking it to the products page -->
-    <div> 
+    <nav> 
       <a href="./index.html">
       <img id="logo" src="../assets/logo/logo-01.svg" alt="Bun bun bake shop logo"/>
       </a>
-    </div>
 
-    <!-- horizontal line -->
-    <hr> 
+      <!-- horizontal line -->
+      <hr>
 
-    <!-- addition of the nav bar to add navigation links -->
-    <nav class="navDiv">
-      <p><span class="textActive"><a href="./index.html">PRODUCTS</a></span></p>
-      <p><span class="textInactive"><a href="./cart-page.html">CART</a></span></p>
+      <!-- addition of the nav bar to add navigation links -->
+      <div class="navDiv">
+         <p><span class="textActive"><a href="./index.html">PRODUCTS</a></span></p>
+         <p><span class="textInactive"><a href="./cart-page.html">CART</a></span></p>
+      </div>
     </nav>
 
     <!-- main div for the product details -->
-    <div>
-      <p class="pageHeader"> Original cinnamon roll</p>
-      
-      <!--Cards for product details-->
-      <div class="prodImgDiv">
-
+    <main>
+      <section>
+        <h1 class="pageHeader"> Original cinnamon roll</h1>
+        
+        <!--Cards for product details-->
         <div class="prodImgDiv">
-          <img id="prodDetailImg" src="../assets/products/original-cinnamon-roll.jpg" alt="Original Cinnamon Roll"/>
-        </div>
 
-        <!-- dropdown menu options -->
-        <div id="prodTextDetails">
-          <p> Customize our delicious, hand-made cinnamon roll to your liking</p>
-          
-          <!-- dropdown 01 div -->
-          <div class="dropSection">
-            <label for="glazing">Glazing:</label>
-            <select name="glazing" id="glazing">
-              <option value="original">Keep original</option>
-              <option value="sugar">Sugar milk</option>
-              <option value="vanilla">Vanilla milk</option>
-              <option value="chocolate">Double chocolate</option>
-            </select>
+          <div class="prodImgDiv">
+            <img id="prodDetailImg" src="../assets/products/original-cinnamon-roll.jpg" alt="Original Cinnamon Roll"/>
           </div>
 
-          <!-- dropdown 02 div -->
-          <div class="dropSection">
-            <label for="packSize">Pack Size:</label>
-            <select name="packSize" id="packSize">
-              <option value="1">1</option>
-              <option value="3">3</option>
-              <option value="6">6</option>
-              <option value="12">12</option>
-            </select>
-          </div>
+          <!-- dropdown menu options -->
+          <div id="prodTextDetails">
+            <p> Customize our delicious, hand-made cinnamon roll to your liking</p>
+            
+            <!-- dropdown 01 div -->
+            <div class="dropSection">
+              <label for="glazing">Glazing:</label>
+              <select name="glazing" id="glazing">
+                <option value="original">Keep original</option>
+                <option value="sugar">Sugar milk</option>
+                <option value="vanilla">Vanilla milk</option>
+                <option value="chocolate">Double chocolate</option>
+              </select>
+            </div>
 
-          <!-- div for the price and button to align them accurately -->
-          <div class="priceAdd">
-            <p> $ 2.49 </p>
-            <div class="inlineSpace">
-               <button class="actionButton">Add to cart</button>
+            <!-- dropdown 02 div -->
+            <div class="dropSection">
+              <label for="packSize">Pack Size:</label>
+              <select name="packSize" id="packSize">
+                <option value="1">1</option>
+                <option value="3">3</option>
+                <option value="6">6</option>
+                <option value="12">12</option>
+              </select>
+            </div>
+
+            <!-- div for the price and button to align them accurately -->
+            <div class="priceAdd">
+              <p> $ 2.49 </p>
+              <div class="inlineSpace">
+                <button class="actionButton">Add to cart</button>
+              </div>
             </div>
           </div>
 
         </div>
-
-      </div>
-    </div>
-  
+      </section>
+    </main>
   </body>
 
 </html>
