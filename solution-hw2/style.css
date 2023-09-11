@@ -1,0 +1,277 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+/* sizing the logo*/
+#logo {
+    width: 400px;
+}
+
+/* horizontal line style */
+hr {
+    background: rgb(0, 0, 0);
+    height: 5px;
+    border: none;
+}
+
+/* anchor tag style for all links */
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+/* anchor tag style for on hover */
+a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* all text styles (paragraph, header, etc) */
+p {
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.textUnderline {
+    text-decoration: underline;
+    padding-top: 5px;
+    padding-bottom: 2px;
+}
+
+.textLight {
+    font-weight: normal;
+}
+
+.textActive{
+    background-color: rgb(255, 255, 0);
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+}
+
+.textInactive {
+    font-size: 22px;
+    font-weight: lighter;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.pageHeader {
+    font-size: 24px;
+    text-align: center;
+    font-weight: lighter;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-weight: bold;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+body {
+    width: 75%;
+    margin: 0 auto;
+}
+
+/* alignment of the navigation div */
+.navDiv {
+
+    /* text-align: center; */
+    width: auto;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+/* main card div */
+.rowBox {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.prodCard {
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    text-align: left;
+    max-width: 305px;
+    height: auto;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    padding: 5px;
+}
+
+.prodCard:hover {
+    background-color: rgb(255, 255, 0);
+    font-weight: bold;
+}
+
+.cardText {
+    width: 285px;
+    margin: auto;
+}
+
+
+/* alignment of the image containers */
+.prodImgDiv {
+    border-color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-align: center;
+    border: 5px;
+    margin-bottom: 0px;
+    padding-top: 5px;
+}
+
+.prodImg {
+    border: 3px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    background-color: transparent;
+    max-width: 285px;
+    max-height: 285px;
+}
+
+/* alingment of the divs of the detail page */
+#prodDetailImg {
+    border: 3px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    background-color: transparent;
+    width: 600px;
+    height: 600px;
+}
+
+.prodDetailCard {
+    background-color: transparent;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    max-width: 420px;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+}
+
+#prodTextDetails {
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    text-align: left;
+    max-width: 200px;
+    display: block;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+/* dropdown menu alignment and styling */
+.dropSection {
+    margin-top: 35px;
+}
+
+#glazing {
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    height: 25px;
+    width: 200px;
+    border-style: solid;
+    margin-top: 2px;
+}
+
+#packSize {
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    height: 25px;
+    width: 200px;
+    border-style: solid;
+    margin-top: 2px;
+}
+
+
+/* button styles */
+.actionButton {
+    color: rgb(0, 0, 0);
+    background-color:rgb(255, 255, 0);
+    font-weight: bold;
+    width: 120px;
+    height: 30px;
+}
+
+.actionButton:hover {
+    color: rgb(0, 0, 0);
+    background-color:rgb(255, 255, 0);
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    width: 120px;
+    height: 30px;
+}
+
+
+/* div for inline box alignment  */
+.priceAdd {
+    vertical-align: center;
+    display: inline-flex;
+    justify-content: flex-end;
+    width: 200px;
+    font-size: 14px;
+    margin-top: 45px;
+    align-items: baseline;
+}
+
+.inlineSpace {
+    margin-left: 10px;
+}
+
+/* div for the cart page */
+.shopping list {
+    max-width: 400px;
+    display:block;
+    margin: 0 auto;
+}
+
+/* alignment for the image and text div */
+.prodCartDiv {
+    background-color: transparent;
+    text-align: center;
+    border: 5px;
+    border-color: black;
+    margin-bottom: 80px;
+}
+
+.prodCartDetails {
+    font-size: 22px;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.prodCartImg {
+    border: 3px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+}
+
+.removeText {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* div for alignment for the total and price div */
+.price {
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.horizontalLine {
+    width: 50%;
+}

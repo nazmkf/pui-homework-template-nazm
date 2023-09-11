@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- title and linking css -->  
+  <head>
+    <meta charset="UTF-8">
+    <title>Product details </title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+
+  <body>
+
+      <!-- division for logo with an id linking it to the products page -->
+      <nav> 
+        <a href="./index.html">
+        <img id="logo" src="../assets/logo/logo-01.svg" alt="Bun bun bake shop logo"/>
+        </a>
+
+        <!-- horizontal line -->
+        <hr>
+
+        <!-- addition of the nav bar to add navigation links -->
+        <div class="navDiv">
+           <p><span class="textInactive"><a href="./index.html">PRODUCTS</a></span></p>
+           <p><span class="textActive"><a href="./cart-page.html">CART</a></span></p>
+        </div>
+      </nav>
+
+    <main>
+      <section>
+
+       <!-- product list with individual cards-->
+       <div>
+         <h1 class="pageHeader">Shopping Cart</h1>
+       </div>
+
+
+       <div class="shoppingList">
+
+         <!-- individual product card 01-->
+         <div class="prodCartDiv">
+            <img class="prodCartImg" src="../assets/products/original-cinnamon-roll.jpg" alt="Original Cinnamon Roll"/>
+       
+            <!-- text for item 01-->
+            <div class="prodCartDetails">
+               <p class="removeText">Remove</p>
+               <p> Original Cinnamon Roll
+                  <br> Glazing: Keep original
+                  <br> Pack size: 1 </p>
+               <p class="price">$ 2.49</p>
+            </div>
+         </div>
+
+
+
+        <!-- individual product card 02-->
+        <div class="prodCartDiv">
+            <img class="prodCartImg" src="../assets/products/double-chocolate-cinnamon-roll.jpg" alt="Double-chocolate Cinnamon Roll"/>
+
+            <!-- text for item 02 -->
+           <div class="prodCartDetails">
+              <p class="removeText">Remove</p>
+              <p> Double Chocolate Cinnamon Roll
+                 <br> Glazing: Sugar milk
+                 <br> Pack size: 6 </p>
+              <p class="price">$ 27.45</p>
+           </div>
+         </div>
+      
+    
+         <hr class="horizontalLine"> 
+
+         <!-- div for total and checkout button -->
+         <div class="prodCartDetails">
+           <p class="price">Total: $ 29.94 </p>
+           <button class="actionButton">Checkout</button>
+         </div>
+        </div>
+      </section>
+    </main>
+  </body>
+
+</html>
