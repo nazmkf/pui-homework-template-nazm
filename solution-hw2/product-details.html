@@ -10,27 +10,31 @@
 
   <body>
 
-    <!-- division for logo with an id linking it to the products page -->
-    <nav> 
-      <a href="./index.html">
-      <img id="logo" src="../assets/logo/logo-01.svg" alt="Bun bun bake shop logo"/>
-      </a>
+    <!-- division for the nav bar to align the logo, nav links, hr and title -->
+    <nav class="navDiv"> 
+      <div>
+        <a href="./index.html">
+           <img id="logo" src="../assets/logo/logo-01.svg" alt="Bun bun bake shop logo"/>
+        </a>
+      </div>
 
-      <!-- horizontal line -->
-      <hr>
+      <!-- division for elements aligned to the right -->
+      <div class="navRight">
+        <div class="navElement">
+            <p><span class="textActive"><a href="./index.html">PRODUCTS</a></span></p>
+            <p><span class="textInactive"><a href="./cart-page.html">CART</a></span></p>
+        </div>
 
-      <!-- addition of the nav bar to add navigation links -->
-      <div class="navDiv">
-         <p><span class="textActive"><a href="./index.html">PRODUCTS</a></span></p>
-         <p><span class="textInactive"><a href="./cart-page.html">CART</a></span></p>
+        <!-- horizontal line -->
+        <hr>
+          
+        <h1 class="pageHeader"> Original cinnamon roll </h1>
       </div>
     </nav>
 
     <!-- main div for the product details -->
     <main>
-      <h1 class="pageHeader"> Original cinnamon roll</h1>
-
-      <section>
+      <section class="rowBox">
         
         <!--Cards for product details-->
         <div class="prodDetails">
@@ -41,7 +45,7 @@
 
           <!-- dropdown menu options -->
           <div id="prodTextDetails">
-            <p> Customize our delicious, hand-made cinnamon roll to your liking</p>
+            <p class="textLight"> Customize our delicious, hand-made cinnamon roll to your liking</p>
             
             <!-- dropdown 01 div -->
             <div class="dropSection">
