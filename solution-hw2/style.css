@@ -11,7 +11,6 @@
 hr {
     background: rgb(0, 0, 0);
     height: 5px;
-    /* margin-left: 20px; */
     margin-bottom: 30px;
     flex-grow: 1;
 }
@@ -40,10 +39,6 @@ p {
 .priceAdd p {
     font-weight: bold;
 }
-
-/* .bold {
-    font-weight: bold;
-} */
 
 .textUnderline {
     font-size: 20px;
@@ -91,8 +86,21 @@ h3 {
     text-align: center;
 }
 
+.removeText {
+    font-size: 14px;
+    font-family: 'PT Sans';
+    font-weight: 800;
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+
+
 body {
     margin: 0 auto;
+}
+
+main{
+    justify-content: center;
 }
 
 /* alignment of the navigation div */
@@ -104,14 +112,11 @@ body {
 .navElement {
     display: flex;
     justify-content: right;
-    margin: 35px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin: 35px 40px 35px 40px;
 }
 
 .navElement p {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin: 0 40px;
 }
 
 .navRight{
@@ -119,17 +124,9 @@ body {
     margin-left: 20px;
 }
 
-main{
-    justify-content: center;
-}
-
 /* main card div */
 .rowBox {
-    /* width: 30%; */
     display: flex;
-    /* flex-direction: row; */
-    /* flex-wrap: wrap; */
-    /* text-align: center; */
     justify-content: center;
 }
 
@@ -138,11 +135,7 @@ main{
     text-align: left;
     max-width: 305px;
     height: auto;
-    /* margin-top: auto;
-    margin-left: auto;
-    margin-right: auto; */
-    margin: 0 20px;
-    margin-bottom: 25px;
+    margin: 0 20px 25px 20px;
     padding: 5px;
 }
 
@@ -175,7 +168,7 @@ main{
     max-height: 285px;
 }
 
-/* alingment of the divs of the detail page */
+/* alignment of the divs of the detail page */
 .prodDetails {
     display: flex;
     flex-direction: row;
@@ -235,7 +228,6 @@ main{
     margin-top: 2px;
 }
 
-
 /* button styles */
 .actionButton {
     color: rgb(0, 0, 0);
@@ -256,11 +248,10 @@ main{
 }
 
 .buttonLeft {
-    text-align: left;
+    width: 696px; 
     display: flex;
     justify-content: right;
-    margin-top: 30px;;
-    margin-right: 52px;
+    margin: 30px 2px 100px 0;
 }
 
 
@@ -280,8 +271,7 @@ main{
 
 /* main div for the cart page */
 .shoppingList {
-    margin-left: 440px;
-    margin-top: 50px;
+    margin: 50px 0 0 440px;
 }
 
 /* alignment for the image and text div */
@@ -295,8 +285,8 @@ main{
 }
 
 .cartLeft {
- display: flex;
- align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .prodCartDetails {
@@ -314,10 +304,6 @@ main{
     font-size: 22px;
 }
 
-.prodCartDetails p {
-    font-size: 22px;
-}
-
 .prodCartImg {
     border: 3px;
     border-style: solid;
@@ -325,14 +311,6 @@ main{
     background-color: transparent;
     width: 165px;
     height: 165px;
-}
-
-.removeText {
-    font-size: 14px;
-    font-family: 'PT Sans';
-    font-weight: 800;
-    text-decoration: underline;
-    margin-bottom: 15px;
 }
 
 /* div for alignment for the total and price div */
