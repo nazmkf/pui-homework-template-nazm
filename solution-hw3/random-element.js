@@ -83,7 +83,7 @@ let originalCinRoll = new Product ('Original Cinnamon Roll' , 2.49, 0, 1);
 
 let selectGlazing = document.querySelector('#glazing');
 let selectPackSize = document.querySelector('#packSize');
-console.log(selectGlazing);
+// console.log(selectGlazing);
 
 // function to update the glazing & pack size choice //
 // displayPrice function executes with the value recieved from the calcPrice function as a parameter//
@@ -95,13 +95,13 @@ function updateGlazing (){
 
 function updatePackSize (){
     console.log('You selected ' + this.value);
-    originalCinRoll.packSie = parseFloat(this.value);
-    displayPrice(calcPrice(originalCinRoll));
+    originalCinRoll.pack = parseFloat(this.value);
+    displayPrice(calcPric(originalCinRoll));
 }
 
 // function to calculate the price//
 function calcPric(product) {
-    let finalPrice = (originalCinRoll.price + originalCinRoll.glazing) * originalCinRoll.pack;
+    let finalPrice = (product.price + product.glazing) * product.pack;
     return finalPrice;
 }
 
@@ -109,31 +109,32 @@ function calcPric(product) {
 function displayPrice(finalPrice) {
     let priceChangeElement = document.querySelector('#priceChange');
     priceChangeElement.innerHTML = '$ ' + finalPrice.toFixed(2);
-
 }
 
 // loops to display the dropdown dynamically on the webpage //
 for (i in glazingDict) {
     var option = document.createElement('option');
-    option.text = glazingDict[i].name;
+    option.innerText = glazingDict[i].name;
     option.value = glazingDict[i].value;
 console.log(glazingDict[i].name);
 console.log(glazingDict[i].value);
 
-    selectGlazing.add(option);
+    selectGlazing.appendChild(option);
 }
 
 for (i in packSizeDict) {
-    var packNumber = document.createElement('packNumber');
-    packNumber.text = packSizeDict[i].name;
-    packNumber.value = packSizeDict[i].value;
+    var option = document.createElement('option');
+    option.text = packSizeDict[i].name;
+    option.value = packSizeDict[i].value;
 
-console.log(glazingDict[i].name);
-console.log(glazingDict[i].value);
+// console.log(packSizeDict[i].name);
+// console.log(packSizeDict[i].value);
 
-    selectPackSize.add(packNumber);
+    selectPackSize.appendChild(option);
 }
 
 
 selectGlazing.addEventListener('change', updateGlazing);
 selectPackSize.addEventListener('change', updatePackSize);
+
+console.log(selectGlazing);
