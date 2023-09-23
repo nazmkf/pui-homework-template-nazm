@@ -1,55 +1,3 @@
-// let arrGlaze = [ ["Keep Original", 0.00], ["Sugar Milk" , 0.00], ["Vanilla Milk" , 0.50] , ["Double Chocolate", 1.50]];
-// let arrPack = [[1,1] , [3,3], [6,5], [12, 10]];
-
-
-// //array listing all the properties and values for glazing
-// let arrGlaze2 = [
-//     {
-//       type: 'Keep Original',
-//       addition: 0.00,
-//     },
-//     {
-//       type: 'Sugar Milk',
-//       addition: 0.00,
-//     },
-//     {
-//       type: 'Vanilla Milk',
-//       addition: 0.50,
-//     },
-//     {
-//       type: "Double Chocolate",
-//       addition: 1.50,
-//     },
-//   ];
-
-// //array listing all the properties and values for pack sizing
-// let arrPack2 = [
-//     {
-//       type: 1,
-//       addition: 1,
-//     },
-//     {
-//       type: 3,
-//       addition: 3,
-//     },
-//     {
-//       type: 6,
-//       addition: 5,
-//     },
-//     {
-//       type: 12,
-//       addition: 10,
-//     },
-//   ];
-
-
-// function displayPrice(price) {
-//     let priceElement = document.querySelector('#priceChange');
-  
-//     priceElement.innerText = price.addition;
-//   }
-
-
 
 class Product {
     constructor (name, price, glazing, pack) {
@@ -65,7 +13,7 @@ const glazingDict = {
    keep_original: {name:'Keep Original', value: 0},
    sugar_milk: {name:'Sugar milk', value: 0},
    vanilla_milk: {name:'Vanilla Milk', value: 0.5},
-   double_chocolate: {name:"Double Chocolate", value: 1.5}
+   double_chocolate: {name:'Double Chocolate', value: 1.5}
 }
 console.log(glazingDict);
 
