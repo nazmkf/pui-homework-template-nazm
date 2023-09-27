@@ -1,0 +1,342 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+/* sizing the logo*/
+#logo {
+    width: 400px;
+}
+
+/* horizontal line style */
+hr {
+    background: rgb(0, 0, 0);
+    height: 5px;
+    margin-bottom: 30px;
+    flex-grow: 1;
+}
+
+/* anchor tag style for all links */
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+/* anchor tag style for on hover */
+a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* all text styles (paragraph, header, etc) */
+p {
+    font-size: 20px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.priceAdd p {
+    font-weight: bold;
+}
+
+.textUnderline {
+    font-size: 20px;
+    text-decoration: underline;
+    padding-top: 5px;
+    padding-bottom: 2px;
+}
+
+.textLight {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.textBottomMargin {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 70px;
+}
+
+.textActive{
+    background-color: rgb(255, 255, 0);
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+}
+
+.textInactive {
+    font-size: 22px;
+    font-weight: lighter;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.pageHeader {
+    font-size: 32px;
+    font-weight: lighter;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    margin-left: 0px;
+    margin-top: 64px;
+}
+
+h3 {
+    font-weight: bold;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.removeText {
+    font-size: 14px;
+    font-family: 'PT Sans';
+    font-weight: 800;
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+
+
+body {
+    margin: 0 auto;
+}
+
+main{
+    justify-content: center;
+}
+
+/* alignment of the navigation div */
+.navDiv {
+    display: flex;
+    margin: 20px;
+}
+
+.navElement {
+    display: flex;
+    justify-content: right;
+    margin: 35px 40px 35px 40px;
+}
+
+.navElement p {
+    margin: 0 40px;
+}
+
+.navRight{
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+/* main card div */
+.rowBox {
+    display: flex;
+    justify-content: center;
+}
+
+.prodCard {
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    text-align: left;
+    max-width: 305px;
+    height: auto;
+    margin: 0 20px 25px 20px;
+    padding: 5px;
+}
+
+.prodCard:hover {
+    background-color: rgb(255, 255, 0);
+    font-weight: bold;
+}
+
+.cardText {
+    width: 285px;
+    margin: auto;
+}
+
+/* alignment of the image containers */
+.prodImgDiv {
+    border-color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-align: center;
+    border: 5px;
+    margin-bottom: 0px;
+    padding-top: 5px;
+}
+
+.prodImg {
+    border: 3px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    background-color: transparent;
+    max-width: 285px;
+    max-height: 285px;
+}
+
+/* alignment of the divs of the detail page */
+.prodDetails {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#prodDetailImg {
+    border: 3px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    background-color: transparent;
+    width: 600px;
+    height: 600px;
+}
+
+.prodDetailCard {
+    background-color: transparent;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    max-width: 420px;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+}
+
+#prodTextDetails {
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    text-align: left;
+    max-width: 250px;
+    display: block;
+    margin: 0 75px;
+
+}
+
+/* dropdown menu alignment and styling */
+.dropSection {
+    font-size: 16px;
+    margin-top: 35px;
+}
+
+#dropdown {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    height: 50px;
+    width: 250px;
+    border: 2.5px solid black;
+    margin-top: 2px;
+}
+
+#glazing {
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    height: 50px;
+    width: 250px;
+    border: 2px solid black;
+    margin-top: 2px;
+}
+
+#packSize {
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    height: 50px;
+    width: 250px;
+    border: 2px solid black;
+    margin-top: 2px;
+}
+
+/* button styles */
+.actionButton {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    background-color:rgb(255, 255, 0);
+    font-weight: bold;
+    width: 160px;
+    height: 50px;
+}
+
+.actionButton:hover {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    background-color:rgb(255, 255, 0);
+    font-weight: bold;
+    width: 160px;
+    height: 50px;
+}
+
+.buttonLeft {
+    width: 696px; 
+    display: flex;
+    justify-content: right;
+    margin: 30px 2px 100px 0;
+}
+
+
+/* div for inline box alignment  */
+.priceAdd {
+    display: inline-flex;
+    justify-content: right;
+    width: 252px;
+    font-size: 14px;
+    margin-top: 80px;
+    align-items: baseline;
+}
+
+.inlineSpace {
+    margin-left: 25px;
+}
+
+/* main div for the cart page */
+.shoppingList {
+    margin: 50px 0 0 440px;
+}
+
+/* alignment for the image and text div */
+.prodCartDiv {
+    background-color: transparent;
+    text-align: left;
+    border: 5px;
+    border-color: black;
+    margin-right: 52px;
+    display: flex;
+}
+
+.cartLeft {
+    display: flex;
+    align-items: center;
+}
+
+.prodCartDetails {
+    font-size: 22px;
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    text-align: left;
+    display: block;
+    padding-left: 30px;
+    padding-right: 80px;
+    width:355px;
+}
+
+.priceDetails {
+    display: flex;
+    font-size: 22px;
+}
+
+.prodCartImg {
+    border: 3px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    background-color: transparent;
+    width: 165px;
+    height: 165px;
+}
+
+/* div for alignment for the total and price div */
+.price {
+    font-family: "PT Sans";
+    font-weight: 400;
+}
+
+.priceLeft {
+    font-family: "PT Sans";
+    font-weight: 400;
+    padding-left: 200px;
+}
+
+.priceRight {
+    font-family: "PT Sans";
+    font-weight: 400;
+    padding-left: 375px;
+}
