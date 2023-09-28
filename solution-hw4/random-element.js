@@ -35,28 +35,29 @@ let selectPackSize = document.querySelector('#packSize');
 
 // function to update the glazing & pack size choice //
 // displayPrice function executes with the value recieved from the calcPrice function as a parameter//
-function updateGlazing (){
-    console.log('You selected ' + this.value);
-    originalCinRoll.glazing = parseFloat(this.value);
-    displayPrice(calcPric(originalCinRoll));
-}
 
-function updatePackSize (){
-    console.log('You selected ' + this.value);
-    originalCinRoll.pack = parseFloat(this.value);
-    displayPrice(calcPric(originalCinRoll));
-}
+// function updateGlazing (){
+//     console.log('You selected ' + this.value);
+//     originalCinRoll.glazing = parseFloat(this.value);
+//     displayPrice(calcPric(originalCinRoll));
+// }
+
+// function updatePackSize (){
+//     console.log('You selected ' + this.value);
+//     originalCinRoll.pack = parseFloat(this.value);
+//     displayPrice(calcPric(originalCinRoll));
+// }
 
 // function to calculate the price//
-function calcPric(product) {
-    let finalPrice = (product.price + product.glazing) * product.pack;
-    return finalPrice;
-}
+// function calcPric(product) {
+//     let finalPrice = (product.price + product.glazing) * product.pack;
+//     return finalPrice;
+// }
 
 //function to display the price calculated //
 function displayPrice(finalPrice) {
     let priceChangeElement = document.querySelector('#priceChange');
-    priceChangeElement.innerHTML =  finalPrice.toFixed(2);
+    priceChangeElement.innerHTML =  pagePrice.toFixed(2);
 }
 
 // loops to display the dropdown dynamically on the webpage //
@@ -122,3 +123,30 @@ function cartArray(){
     console.log(cart);
 }
 
+
+
+
+//CHECK//
+
+// Update the updateGlazing function
+function updateGlazing () {
+    console.log('You selected ' + this.value);
+    originalCinRoll.glazing = parseFloat(this.value);
+    const updatedPrice = calculateUpdatedPrice(originalCinRoll.price, originalCinRoll.glazing, originalCinRoll.pack);
+    displayPrice(updatedPrice);
+}
+
+// Update the updatePackSize function
+function updatePackSize () {
+    console.log('You selected ' + this.value);
+    originalCinRoll.pack = parseFloat(this.value);
+    const updatedPrice = calculateUpdatedPrice(originalCinRoll.price, originalCinRoll.glazing, originalCinRoll.pack);
+    displayPrice(updatedPrice);
+}
+
+// // Function to calculate the updated price based on pagePrice, glazing, and pack
+function calculateUpdatedPrice(pagePrice, glazing, pack) {
+    const glazingPrice = glazingDict[glazing].value;
+    const finalPrice = (pagePrice + glazingPrice) * pack;
+    return finalPrice;
+}
