@@ -96,7 +96,7 @@ const rollType = params.get('roll');
 
 
 const pageTitle = document.getElementById('pageHeader');
-pageTitle.innerText= rollType + " Cinnamon roll";
+pageTitle.innerText = rollType + " Cinnamon roll";
 
 const pageImage = document.getElementById('prodDetailImg');
 pageImage.src = "../assets/products/" + rolls[rollType].imageFile;
@@ -104,6 +104,8 @@ pageImage.src = "../assets/products/" + rolls[rollType].imageFile;
 const pagePrice = document.getElementById('priceChange');
 pagePrice.innerText = rolls[rollType].basePrice;
 
+const addCart = document.getElementById("actionButton");
+addCart.addEventListener('click', cartArray);
 
 class Roll {
     constructor(rollType, rollGlazing, packSize, basePrice) {
@@ -114,4 +116,9 @@ class Roll {
     }
 }
 
+function cartArray(){
+    let rollProd = new Roll(rollType, 0, 0, rolls[rollType].basePrice);
+    cart.push(rollProd);
+    console.log(cart);
+}
 
