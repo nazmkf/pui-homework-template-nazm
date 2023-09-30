@@ -42,7 +42,6 @@ function updateGlazing (){
     console.log('You selected ' + this.value);
     originalCinRoll.glazing = parseFloat(this.value);
     selectedGlaze = originalCinRoll.glazing;
-    // displayPrice(calcPric(originalCinRoll));
     calcPric();
 }
 
@@ -50,8 +49,8 @@ function updatePackSize (){
     console.log('You selected ' + this.value);
     originalCinRoll.pack = parseFloat(this.value);
     selectedPack = originalCinRoll.pack;
-    // displayPrice(calcPric(originalCinRoll));
     calcPric();
+    // displayPrice(calcPric(originalCinRoll));
 }
 
 //function to calculate the price//
@@ -62,20 +61,14 @@ function calcPric() {
     // return finalPrice;
 }
 
-//function to display the price calculated //
-// function displayPrice(pagePrice) {
-    
-// }
-
 // loops to display the dropdown dynamically on the webpage //
 for (i in glazingDict) {
     var option = document.createElement('option');
     option.innerText = glazingDict[i].name;
     option.value = glazingDict[i].value;
-console.log(glazingDict[i].name);
-console.log(glazingDict[i].value);
-
     selectGlazing.appendChild(option);
+    //console.log(glazingDict[i].name);
+    //console.log(glazingDict[i].value);
 }
 
 for (i in packSizeDict) {
@@ -88,19 +81,21 @@ for (i in packSizeDict) {
 
     selectPackSize.appendChild(option);
 }
+
+
 selectGlazing.addEventListener('change', updateGlazing);
 selectPackSize.addEventListener('change', updatePackSize);
-
 console.log(selectGlazing);
 
 
+//creating an array to later call when add to cart is executed//
 let cart = [];
 
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const rollType = params.get('roll');
 
-
+//calling all elements that need to update//
 const pageTitle = document.getElementById('pageHeader');
 pageTitle.innerText = rollType + " Cinnamon roll";
 
@@ -122,11 +117,7 @@ class Roll {
     }
 }
 
-
-
-
-// console.log(finalGlaze);
-// console.log(finalPack);
+//function to execute and display the Roll array//
 function cartArray(){
     let finalGlaze = selectGlazing.options[selectGlazing.selectedIndex].innerHTML;
     let finalPack = selectPackSize.options[selectPackSize.selectedIndex].innerHTML;
