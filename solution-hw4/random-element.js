@@ -1,7 +1,6 @@
 
 class Product {
     constructor (name, price, glazing, pack) {
-
     this.name = name;
     this.price = price;
     this.glazing = glazing;
@@ -34,31 +33,39 @@ let selectPackSize = document.querySelector('#packSize');
 // console.log(selectGlazing);
 
 // function to update the glazing & pack size choice //
-// displayPrice function executes with the value recieved from the calcPrice function as a parameter//
+//displayPrice function executes with the value recieved from the calcPrice function as a parameter//
 
-// function updateGlazing (){
-//     console.log('You selected ' + this.value);
-//     originalCinRoll.glazing = parseFloat(this.value);
-//     displayPrice(calcPric(originalCinRoll));
-// }
 
-// function updatePackSize (){
-//     console.log('You selected ' + this.value);
-//     originalCinRoll.pack = parseFloat(this.value);
-//     displayPrice(calcPric(originalCinRoll));
-// }
+let selectedGlaze = 0;
+let selectedPack = 1;
+function updateGlazing (){
+    console.log('You selected ' + this.value);
+    originalCinRoll.glazing = parseFloat(this.value);
+    selectedGlaze = originalCinRoll.glazing;
+    // displayPrice(calcPric(originalCinRoll));
+    calcPric();
+}
 
-// function to calculate the price//
-// function calcPric(product) {
-//     let finalPrice = (product.price + product.glazing) * product.pack;
-//     return finalPrice;
-// }
+function updatePackSize (){
+    console.log('You selected ' + this.value);
+    originalCinRoll.pack = parseFloat(this.value);
+    selectedPack = originalCinRoll.pack;
+    // displayPrice(calcPric(originalCinRoll));
+    calcPric();
+}
+
+//function to calculate the price//
+function calcPric() {
+    let finalPrice = (rolls[rollType].basePrice + selectedGlaze) * selectedPack;
+    let priceChangeElement = document.querySelector('#priceChange');
+    priceChangeElement.innerText =  finalPrice.toFixed(2);
+    // return finalPrice;
+}
 
 //function to display the price calculated //
-function displayPrice(finalPrice) {
-    let priceChangeElement = document.querySelector('#priceChange');
-    priceChangeElement.innerHTML =  pagePrice.toFixed(2);
-}
+// function displayPrice(pagePrice) {
+    
+// }
 
 // loops to display the dropdown dynamically on the webpage //
 for (i in glazingDict) {
@@ -81,8 +88,6 @@ for (i in packSizeDict) {
 
     selectPackSize.appendChild(option);
 }
-
-
 selectGlazing.addEventListener('change', updateGlazing);
 selectPackSize.addEventListener('change', updatePackSize);
 
@@ -117,36 +122,17 @@ class Roll {
     }
 }
 
+
+
+
+// console.log(finalGlaze);
+// console.log(finalPack);
 function cartArray(){
-    let rollProd = new Roll(rollType, 0, 0, rolls[rollType].basePrice);
+    let finalGlaze = selectGlazing.options[selectGlazing.selectedIndex].innerHTML;
+    let finalPack = selectPackSize.options[selectPackSize.selectedIndex].innerHTML;
+    let rollProd = new Roll(rollType, finalGlaze, finalPack, rolls[rollType].basePrice);
     cart.push(rollProd);
     console.log(cart);
 }
 
 
-
-
-//CHECK//
-
-// Update the updateGlazing function
-function updateGlazing () {
-    console.log('You selected ' + this.value);
-    originalCinRoll.glazing = parseFloat(this.value);
-    const updatedPrice = calculateUpdatedPrice(originalCinRoll.price, originalCinRoll.glazing, originalCinRoll.pack);
-    displayPrice(updatedPrice);
-}
-
-// Update the updatePackSize function
-function updatePackSize () {
-    console.log('You selected ' + this.value);
-    originalCinRoll.pack = parseFloat(this.value);
-    const updatedPrice = calculateUpdatedPrice(originalCinRoll.price, originalCinRoll.glazing, originalCinRoll.pack);
-    displayPrice(updatedPrice);
-}
-
-// // Function to calculate the updated price based on pagePrice, glazing, and pack
-function calculateUpdatedPrice(pagePrice, glazing, pack) {
-    const glazingPrice = glazingDict[glazing].value;
-    const finalPrice = (pagePrice + glazingPrice) * pack;
-    return finalPrice;
-}
