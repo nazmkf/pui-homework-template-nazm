@@ -54,7 +54,7 @@ function updatePackSize (){
 }
 
 //function to calculate the price//
-function calcPric() {
+function calcPric(){
     let finalPrice = (rolls[rollType].basePrice + selectedGlaze) * selectedPack;
     let priceChangeElement = document.querySelector('#priceChange');
     priceChangeElement.innerText =  finalPrice.toFixed(2);
@@ -108,14 +108,14 @@ pagePrice.innerText = rolls[rollType].basePrice;
 const addCart = document.getElementById("actionButton");
 addCart.addEventListener('click', cartArray);
 
-class Roll {
-    constructor(rollType, rollGlazing, packSize, basePrice) {
-        this.type = rollType;
-        this.glazing =  rollGlazing;
-        this.size = packSize;
-        this.basePrice = basePrice;
-    }
-}
+// class Roll {
+//     constructor(rollType, rollGlazing, packSize, basePrice) {
+//         this.type = rollType;
+//         this.glazing =  rollGlazing;
+//         this.size = packSize;
+//         this.basePrice = basePrice;
+//     }
+// }
 
 //function to execute and display the Roll array//
 function cartArray(){

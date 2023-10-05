@@ -7,7 +7,6 @@
     <title>Product details </title>
     <link rel="stylesheet" href="./style.css" type="text/css">
     <script defer src="./rollsData.js"></script>
-    <script defer src="./random-element.js"></script>
     <script defer src="./cart-populate.js"></script>
   </head>
 
@@ -45,31 +44,34 @@
           <template class="cartTemplate">
             <div class="prodCartDiv">
               <div class="cartLeft">
-                  <img class="prodCartImg" src="../assets/products/original-cinnamon-roll.jpg" alt="Original Cinnamon Roll"/>
+                  <div>
+                    <img class="prodCartImg" src="../assets/products/original-cinnamon-roll.jpg" alt="Original Cinnamon Roll"/>
+                    <p id="remove" class="removeText">Remove</p>
+                  </div>
 
                   <!-- text for item 01-->
                   <div class="prodCartDetails">
-                       <p> Original Cinnamon Roll
-                       <br> Glazing: Keep original
-                       <br> Pack size: 1 </p>
+                       <p id="cartTitle"> Original Cinnamon Roll </p>
+                       <p id="cartGlazing"> Glazing: Keep original </p>
+                       <p> Pack size: <span id="packPrice"> 1 </span></p>
                   </div>
 
-                  <p class="price">$ 2.49</p>
-              </div>
+                  <p> $ <span class="totalPrice"> 2.49</span></p>
+                </div>
            </div>
-           <p class="removeText">Remove</p>
+
+        
           </template>
+        </div>
 
 
-
-
-          <!-- individual product card 02-->
-          <template>
-            <div class="prodCartDiv">
+        <!-- individual product card 02-->
+        <!-- <template>
+          <div class="prodCartDiv">
               <div class="cartLeft">
                  <img class="prodCartImg" src="../assets/products/double-chocolate-cinnamon-roll.jpg" alt="Double-chocolate Cinnamon Roll"/>
 
-                 <!-- text for item 02 -->
+                
                  <div class="prodCartDetails">
                       <p> Double Chocolate Cinnamon Roll
                         <br> Glazing: Sugar milk
@@ -78,18 +80,19 @@
 
                  <p class="price">$ 27.45</p>
               </div>
-            </div>
+          </div>
 
-            <p class="removeText">Remove</p>
-          </template>
-    
+            <p id="remove" class="removeText">Remove</p>
+        </template> -->
+
+          <div class="shoppingList">
           <hr class="horizontalLine"> 
 
           <!-- div for total and checkout button -->
           <div>
             <div class="priceDetails">
                <div class="priceLeft">Total:</div>
-               <div class="priceRight">$ 00.00 </p>
+               <div id="priceRight">$ 00.00 </p>
             </div> 
           </div>
           

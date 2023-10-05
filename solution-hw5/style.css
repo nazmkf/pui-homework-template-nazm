@@ -306,6 +306,7 @@ main{
     display: block;
     padding-left: 30px;
     padding-right: 80px;
+    padding-bottom: 80px;
     width:355px;
 }
 
@@ -324,9 +325,10 @@ main{
 }
 
 /* div for alignment for the total and price div */
-.price {
+.totalPrice {
     font-family: "PT Sans";
     font-weight: 400;
+    padding-bottom: 70px;
 }
 
 .priceLeft {
@@ -335,8 +337,12 @@ main{
     padding-left: 200px;
 }
 
-.priceRight {
+#priceRight {
     font-family: "PT Sans";
     font-weight: 400;
     padding-left: 375px;
+}
+
+.cartTemplate {
+    margin-bottom: 50px;
 }
