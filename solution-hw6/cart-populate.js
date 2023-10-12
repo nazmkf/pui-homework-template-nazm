@@ -1,29 +1,28 @@
-// class Roll{
-//     constructor(rollType, rollGlazing, packSize, rollPrice) {
-//         this.type = rollType;
-//         this.glazing =  rollGlazing;
-//         this.size = packSize;
-//         this.basePrice = rollPrice;
-//     }
-// }
+class Product {
+    constructor (name, price, glazing, pack) {
+    this.name = name;
+    this.price = price;
+    this.glazing = glazing;
+    this.pack = pack;
+    }
+}
 
-let cartArray = [];
+let cart = [];
 let priceUpdate = 0;
-// let packDict = { 1:1, 3:3, 6:5, 12:10};
 
-// const glazingDict = {
-//     keep_original: {name:'Keep Original', value: 0},
-//     sugar_milk: {name:'Sugar milk', value: 0},
-//     vanilla_milk: {name:'Vanilla Milk', value: 0.5},
-//     double_chocolate: {name:'Double Chocolate', value: 1.5}
-//  }
+const glazingDict = {
+    keep_original: {name:'Keep Original', value: 0},
+    sugar_milk: {name:'Sugar milk', value: 0},
+    vanilla_milk: {name:'Vanilla Milk', value: 0.5},
+    double_chocolate: {name:'Double Chocolate', value: 1.5}
+ }
  
-//  const packSizeDict = {
-//      one_pack: {name:"1", value: 1},
-//      three_pack: {name:"3", value: 3},
-//      six_pack: {name:"6", value: 5},
-//      twelve_pack: {name:"12", value: 10}
-//  }
+ const packSizeDict = {
+     one_pack: {name:"1", value: 1},
+     three_pack: {name:"3", value: 3},
+     six_pack: {name:"6", value: 5},
+     twelve_pack: {name:"12", value: 10}
+ }
 
 function calcPric(rollItem){
     console.log(rollItem.glazing);
@@ -35,32 +34,22 @@ function calcPric(rollItem){
         }
     }
     for (let j in packSizeDict){
-        if (rollItem.size === packSizeDict[j].name){
+        if (rollItem.pack === packSizeDict[j].name){
             packS = packSizeDict[j].value;
         }
     }
-    let finalPrice = (rollItem.basePrice + glaze) * packS;
+    let finalPrice = (rollItem.price + glaze) * packS;
     console.log(finalPrice)
     // let priceChangeElement = document.querySelector('#priceChange');
     return finalPrice.toFixed(2);
 }
 
+retrieveFromLocalStorage();
 
-// creating Roll objects and adding them to the cart
-const ogCinRoll = new Roll("Original", "Sugar Milk", '1', 2.49);
-const walnutRoll = new Roll("Walnut", "Vanilla Milk", '12' , 3.49);
-const raisinRoll = new Roll("Raisin",  "Sugar Milk", '3', 2.99);
-const appleRoll = new Roll("Apple", "Original", '3', 3.49);
-
-cartArray.push(ogCinRoll);
-cartArray.push(walnutRoll);
-cartArray.push(raisinRoll);
-cartArray.push(appleRoll);
-
-console.log(cartArray);
+console.log(cart);
 
 //iterating the objects in the array//
-for (const rollItem of cartArray) {
+for (const rollItem of cart) {
     console.log(rollItem)
     addrollItem(rollItem);
 }
@@ -72,7 +61,6 @@ function addrollItem(rollItem) {
 
     // adding the item to the clone 
     rollItem.element = clone.querySelector('.prodCartDiv');
-    // console.log(rollItem.element) 
 
     const removeBtn = rollItem.element.querySelector('#remove');
     removeBtn.addEventListener('click', () => {
@@ -83,6 +71,7 @@ function addrollItem(rollItem) {
     cartElement.appendChild(rollItem.element);
     updateDetails(rollItem);
     updateCartTotal();
+    saveToStorage();
 }
 
 
@@ -90,34 +79,34 @@ function deleteCartItem(rollItem) {
     const cartElement = document.querySelector('.shoppingList');
     
     // removing the item from the cartArray
-    const index = cartArray.indexOf(rollItem);
+    const index = cart.indexOf(rollItem);
     if (index !== -1) {
-        cartArray.splice(index, 1);
+        cart.splice(index, 1);
     }
 
     cartElement.removeChild(rollItem.element);
     updateCartTotal();
+    saveToStorage();
 }
 
 
 function updateDetails(rollItem) {
     
     const templateImage = rollItem.element.querySelector(".prodCartImg");
-    templateImage.src = "../assets/products/" + rolls[rollItem.type].imageFile;
+    templateImage.src = "../assets/products/" + rolls[rollItem.name].imageFile;
     
     const templateTitle = rollItem.element.querySelector("#cartTitle");
-    templateTitle.innerText = rollItem.type + " Cinnamon roll";
+    templateTitle.innerText = rollItem.name + " Cinnamon roll";
 
     const templateGlazing = rollItem.element.querySelector("#cartGlazing");
     templateGlazing.innerText = rollItem.glazing;
 
     const templatePackPrice = rollItem.element.querySelector("#packPrice");
-    templatePackPrice.innerText = rollItem.size;
+    templatePackPrice.innerText = rollItem.pack;
     console.log(templatePackPrice);
 
     let templateTotalPrice = rollItem.element.querySelector(".totalPrice");
     templateTotalPrice.innerText = calcPric(rollItem);
-    // console.log(templateTotalPrice); 
 }
 
 
@@ -125,13 +114,28 @@ function updateCartTotal() {
     let totalPrice = 0;
 
     // iterating through the cart and updating the cart array 
-    for (const rollItem of cartArray) {
+    for (const rollItem of cart) {
         totalPrice = totalPrice + parseFloat(calcPric(rollItem));
     }
 
     // updating the price displayed //
     const totalElement = document.getElementById('priceRight');
     if (totalElement) {
-        totalElement.innerText = totalPrice.toFixed(2);
+        totalElement.innerText = '$ ' + totalPrice.toFixed(2);
     }
+}
+
+function saveToStorage() {
+    const cardArrayString = JSON.stringify(cart);
+    localStorage.setItem("cartStorage", cardArrayString);
+    console.log(cardArrayString);
+}
+  
+function retrieveFromLocalStorage() {
+    const cardArrayString = localStorage.getItem("cartStorage");
+    const cartArrayTemp = JSON.parse(cardArrayString);
+    for (const cartData of cartArrayTemp) {
+        cart.push(cartData);
+    }
+    console.log(cardArrayString);
 }
