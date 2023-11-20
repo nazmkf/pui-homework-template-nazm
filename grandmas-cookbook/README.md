@@ -1,4 +1,4 @@
-# PUI homework
+# Nazm's Final website
 
 Deployed website: https://nazmkf.github.io/pui-homework-template-nazm
 
