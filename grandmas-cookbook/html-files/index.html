@@ -2,7 +2,9 @@
 <html lang="en">
   <meta charset="UTF-8">
   <link rel="stylesheet" href="../css-files/style.css" type="text/css">
-  <script defer src="../js-files/random-element.js"></script>
+  <script defer src="../js-files/recipeJS.js"></script>
+  <script defer src="../libs/turnjs/lib/turn.html4.js"></script>
+  <script defer src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 
 
   <title>Page Title</title>
@@ -42,6 +44,7 @@
 
       <h2 class="subtitle_black_frontcenter">Grandma's Cookbook</h2>
 
+
       <div id="flipbook">
         <div class="hard"> Turn.js </div>
         <div class="hard"></div>
@@ -52,6 +55,18 @@
         <div class="hard"></div>
         <div class="hard"></div>
       </div>
+      <script type="text/javascript">
+        $("#flipbook").turn({
+          width: 400,
+          height: 300,
+          autoCenter: true
+        });
+      </script>
+      Page 4
+      
+
+
+
       <img id="book" src="../assets/recipe_book_bg/Group 26.svg" alt="Closed book with vintage looking cover reads The Goodness of Konkani randaap">
        
       <div class="flip_arrows">
