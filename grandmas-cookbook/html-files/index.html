@@ -4,19 +4,13 @@
   <head>
     <title>Page Title</title>
     <link rel="stylesheet" href="../css-files/style.css" type="text/css">
-    <script defer src="../js-files/recipeJS.js"></script>
+    <link rel="stylesheet" href="../css-files/flipbook_style.css" type="text/css">
+    <script type="text/javascript" src="../js-files/recipeJS.js"></script>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="/grandmas-cookbook/libs/jquery-3.7.1.min.js"></script>
-    <!-- <script src="/grandmas-cookbook/libs/turnjs/lib/turn.html4.min.js"></script> -->
-
-    <script defer type="text/javascript">
-      $("#flipbook").turn({
-        width: 700,
-        height: 300,
-        autoCenter: true
-      });
-    </script>
+    <script type="text/javascript" src="../js-files/turn.min.js"></script>
+    <script type="text/javascript" src="../js-files/recipeJS.js"></script>
   </head>
 
 
@@ -57,24 +51,34 @@
       <h2 class="subtitle_black_frontcenter">Grandma's Cookbook</h2>
 
 
-      <!-- Trial for turn.js flipbok library
       <div id="flipbook">
-        <div class="hard"> Turn.js </div>
-        <div class="hard"></div>
-        <div> Page 1 </div>
-        <div> Page 2 </div>
-        <div> Page 3 </div>
-        <div> Page 4 </div>
-        <div class="hard"></div>
-        <div class="hard"></div>
+        <div>
+          <h2>First page</h2>
+          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+        </div>
+  
+        <div>
+          <h2>Second page</h2>
+          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+        </div>
+  
+        <div>
+          <h2>Third page</h2>
+          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+        </div>
+  
+        <div>
+          <h2>Fourth page</h2>
+          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+        </div>
       </div>
-       -->
+  
 
       
 
 
 
-      <img id="book" src="../assets/recipe_book_bg/Group 26.svg" alt="Closed book with vintage looking cover reads The Goodness of Konkani randaap">
+      <!-- <img id="book" src="../assets/recipe_book_bg/Group 26.svg" alt="Closed book with vintage looking cover reads The Goodness of Konkani randaap"> -->
        
       <div class="flip_arrows">
         <img class="arrow_icon" src="../assets/icons/arrow_left.svg" alt="Arrow pointing to the left"/>
@@ -94,11 +98,28 @@
       </div>
     </div>
 
+
+
+
+
+
     <footer class="footer">
       <img src="../assets/icons/Group 42.svg" alt="orange footer bar"/>
       <!-- <img class="footer_rect" src="../assets/icons/footer_rectangle.svg" alt="orange footer bar"/>
       <p class="footer_text"> Made with ❤️ by Nazm for Aaie and Amma ||  Feel free to get in touch here to ask any questions about my culture :)</p> -->
     </footer>
+
+    <!-- javascript for flipbook  -->
+    <script type="text/javascript">
+      $('#flipbook').turn({
+        width: 600,
+        height: 400,
+        page: 1,
+        // autoCenter: true,
+        duration: 2000
+      })
+    </script>
+    
 
   </main>
 
