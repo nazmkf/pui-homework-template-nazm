@@ -12,12 +12,14 @@
 
 
 $('#flipbook').turn({
-  width: 600,
-  height: 400,
-  page: 1,
+  height: 1000,
+  width: 1400,
+  // page: 1,
   // autoCenter: true,
   duration: 2000
 })
+
+$('#flipbook').height(1000);
 
 
 
