@@ -108,6 +108,17 @@ a {
     margin-bottom: 55px;
 }
 
+.brownSubtitle {
+    color: rgba(123, 55, 2, 1);
+    font-family: "Capriola";
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 5px;
+    margin-bottom: 55px;
+}
+
 .subtitle_black {
     color: rgb(0, 0, 0);
     font-family: "Capriola";
@@ -117,6 +128,17 @@ a {
     line-height: normal;
     margin-bottom: 5px;
 }
+
+.subtitleQues_black {
+    color: rgb(0, 0, 0);
+    font-family: "Capriola";
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 5px;
+}
+
 
 
 .subtitle_black_frontcenter {
@@ -142,6 +164,19 @@ a {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+.special_black {
+
+        color: rgb(0, 0, 0);
+        font-family: "Barlow";
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
 
 .light_black {
     color: rgb(0, 0, 0);

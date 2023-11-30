@@ -1,4 +1,90 @@
 
+
+
+
+function getRandomInt(max){
+    return r = Math.floor(Math.random()*max);
+}
+
+let randomRecipe = getRandomInt(4) + 1; 
+
+console.log(randomRecipe);
+
+let supriseMe = document.querySelector('.suprise');
+supriseMe.addEventListener("click", chosenRecipe);
+
+function chosenRecipe(){
+
+    // let a = document.createElement('p');
+    // a.textContent = recipeTitle[t];
+    
+    // let chosenRecipeText = document.querySelector('.rightText');
+    // chosenRecipeText.appendChild(a);
+
+    let t = randomRecipe;    
+    let newTitle = document.querySelector('.title');
+    newTitle.textContent = recipeTitle[t];
+
+    let newSubtitle = document.querySelector('.brownSubtitle');
+    newSubtitle.textContent = 'is todays chosen recipe';
+
+    let newDescrip = document.querySelector('.special_black');
+    newDescrip.textContent = recipeDescrip[t] + "Want to see another recipe?";
+
+    let newQues = document.querySelector('.subtitleQues_black');
+    newQues.textContent = '';
+
+    let supriseButton = document.querySelector('.supriseMe');
+    supriseMe.textContent = "Try Again";
+}
+
+/* <div class="right_text">
+<h1 class="title">Mangalore</h1>
+<p class="brown">recipes straight from grandma's kitchen</p>
+
+<h2 class="subtitle_black">What are you in the mood for today?</h2>
+<p class="regular_black">Click on suprise me and get today's recipe!</p>
+<button class="suprise"> SUPRISE ME </button>
+</div> */
+
+const recipeDescrip = {
+    1: [
+      "Dali Thoy, a Konkani Style Dal is a simple Indian Vegan Dal recipe made with minimal ingredients and under 30 minutes."
+    ],
+  
+    2: [
+      "Dali Thoy, a Konkani Style Dal is a simple Indian Vegan Dal recipe made with minimal ingredients and under 30 minutes.Rice"
+    ],
+  
+    3: [
+        "Dali Thoy, a Konkani Style Dal is a simple Indian Vegan Dal recipe made with minimal ingredients and under 30 minutes.Rice"
+    ],
+  
+    4: [
+        "Dali Thoy, a Konkani Style Dal is a simple Indian Vegan Dal recipe made with minimal ingredients and under 30 minutes.Rice"
+    ]
+  };
+
+
+const recipeTitle = {
+    1: [
+      "Dalithoy"
+    ],
+  
+    2: [
+      "Daal Rice"
+    ],
+  
+    3: [
+      "Surnoli Dosa"
+    ],
+  
+    4: [
+      "Kadgi Ghashi"
+    ]
+  };
+
+
 const ingredients = {
     1: [
       "1 (16 ounce) loaf frozen pound cake, thawed",
@@ -40,6 +126,20 @@ const ingredients = {
       "1 1/2 cups cherry pie filling, divided"
     ]
   };
+
+
+  let j = 0;
+  let ingredientContent = document.querySelectorAll('.ingredients');
+
+  for (i in ingredients) {
+    // console.log(ingredients[i])
+    var content = document.createElement('p');
+    content = ingredients[i];
+    console.log(content);
+    ingredientContent[j].textContent = content;
+    j++;
+}
+
 
 
   const prep = {
@@ -84,6 +184,18 @@ const ingredients = {
     ]
   };
   
+
+//   let k = 0;
+//   let prepContent = document.querySelectorAll('.ingredients');
+
+//   for (i in ingredients) {
+//     // console.log(ingredients[i])
+//     var content = document.createElement('p');
+//     content = ingredients[i];
+//     console.log(content);
+//     ingredientContent[j].textContent = content;
+//     j++;
+// }
 
 
 
@@ -145,14 +257,6 @@ const description = {
   };
 
 
-  let j = 0;
-  let ingredientContent = document.querySelectorAll('.ingredients');
 
-  for (i in ingredients) {
-    // console.log(ingredients[i])
-    var content = document.createElement('p');
-    content = ingredients[i];
-    console.log(content);
-    ingredientContent[j].textContent = content;
-    j++;
-}
+
+ 
