@@ -181,7 +181,7 @@ a {
     padding-right: 45px;
     text-align: left;
     margin-top: 5px;;
-    margin-bottom: 35px;;
+    margin-bottom: 30px;;
 }
 
 .fancyTextLarge {
@@ -213,8 +213,9 @@ ul {
 }
 
 hr{
-    margin-left: 40px;
+    margin-left: 45px;
     margin-right: 35px;
+    margin-bottom: 15px;
 }
 
 .individualImage {
@@ -288,6 +289,7 @@ button {
 }
 
 .recipe_second {
+    padding-top: 30px;
     text-align: left;
 }
 
