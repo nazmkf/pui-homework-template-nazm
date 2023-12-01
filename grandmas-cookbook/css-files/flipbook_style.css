@@ -10,17 +10,13 @@
     height: 300px;
 }
 
-#flipbook .page{
-    width: 400px;
-    height: 300px;
-    background-color:white;
-    /* line-height:300px;
-    font-size:20px;
-    text-align:center; */
+#flipbook .turn-page{
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    
 }
-
 #flipbook .shadow, #flipbook.shadow{
-  -webkit-box-shadow: 0 4px 10px #666;
+  -webkit-box-shadow: 0 4px 10px #482020;
   -moz-box-shadow: 0 4px 10px #666;
   -ms-box-shadow: 0 4px 10px #666;
   -o-box-shadow: 0 4px 10px #666;
@@ -35,7 +31,6 @@
     -o-perspective:2000px;
     perspective:2000px;
     background-color:#dedddd;
-
 }
 
 

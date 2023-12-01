@@ -70,7 +70,7 @@ a {
 
 }
 
-#dish {
+.dish {
     position: absolute;
     left: 0px;
     top: 82px;
@@ -167,29 +167,61 @@ a {
     font-family: "Barlow";
     font-size: 21px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: normal;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: -3px;
+    margin-bottom: 31px;
 }
 
 .fancyTextSmall {
     color: rgb(0, 0, 0);
+    font-family: "Barlow";
+    font-size: 14px;
+    padding-left: 45px;
+    padding-right: 45px;
+    text-align: left;
+    margin-top: 5px;;
+    margin-bottom: 35px;;
+}
+
+.fancyTextLarge {
+    color: rgb(0, 0, 0);
     font-family: "Syne Tactile";
-    font-size: 21px;
+    font-size: 35px;
+    padding-left: 45px;
+    padding-right: 45px;
+    text-align: left;
 }
 
 .fancyText {
     color: rgb(0, 0, 0);
     font-family: "Syne Tactile";
-    font-size: 35px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding-left: 45px;
+    padding-right: 45px;
+    text-align: left;
+    margin-bottom: 0px;
 }
 
+ul {
+    margin-left: 15px;
+    padding-right: 45px;
+    text-align: left;
+}
+
+hr{
+    margin-left: 40px;
+    margin-right: 35px;
+}
+
+.individualImage {
+    padding-left: 45px;
+    padding-right: 45px;
+    text-align: center;
+}
 .light_black {
     color: rgb(0, 0, 0);
     font-family: "Barlow";
@@ -225,14 +257,17 @@ button {
     flex-shrink: 0;
 }
 
-
-/* recipe book properties */
-#book {
-    z-index: 1;
-    position: relative;
-    align-items: center;
+.newButton {
+    color: rgb(233, 91, 75);
+    background: rgb(255, 255, 255);
+    text-align: left;
+    font-family: "Barlow";
+    font-size: 23px;
+    text-decoration: underline;
 }
 
+
+/* recipe book properties */
 .recipe_book {
     width: 1450px;
     text-align: center;
@@ -248,9 +283,14 @@ button {
     margin-bottom: 10px;
 }
 
-#frontCover {
-    background-color: brown;
+.recipe_first { 
+    text-align: left;
 }
+
+.recipe_second {
+    text-align: left;
+}
+
 
 .flip_arrows {
     display: flex;
@@ -281,35 +321,8 @@ button {
     border-radius: 10px;
 }
 
-#flipbook{
-    width:1500px;
-    height:300px;
-    z-index: 100;
-}
-#flipbook .flipbook-page{
-    /* width:400px;
-    height:300px;
-    background-color:white;
-    line-height:300px;
-    font-size:20px;
-    text-align:center; */
-    background-color: aqua;
-}
 
-#flipbook .page-wrapper{
-    width: 700px;
-    height: 1000px;
-}
 /* 
-#flipbook .page{
-    width:400px;
-    height:300px;
-    background-color:white;
-    line-height:300px;
-    font-size:20px;
-    text-align:center;
-}
-
 #flipbook .page-wrapper{
     -webkit-perspective:2000px;
     -moz-perspective:2000px;

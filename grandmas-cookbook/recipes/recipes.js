@@ -30,13 +30,36 @@ function chosenRecipe(){
 
     let newDescrip = document.querySelector('.special_black');
     newDescrip.textContent = recipeDescrip[t] + "Want to see another recipe?";
+    
+        // // Create a new span for the additional text
+        // let additionalText = document.createElement('span');
+        // additionalText.textContent = ' Want to see another recipe?';
+    
+        // // Append space between description and additional text
+        // newDescrip.appendChild(document.createTextNode(' '));
+    
+        // // Append additional text to the description
+        // newDescrip.appendChild(additionalText);
 
     let newQues = document.querySelector('.subtitleQues_black');
     newQues.textContent = '';
 
     let supriseButton = document.querySelector('.supriseMe');
-    supriseMe.textContent = "Try Again";
+    supriseMe.textContent = "Let's try again";
+    supriseMe.classList.add('newButton');
+
+    console.log("Recipe Index:", t);
+    let dishImage = document.querySelector('.dish');
+    dishImage.src = recipeImages[t];
 }
+
+//attempt to change the dish image when the suprise recipe is changed//
+const recipeImages = {
+    1: "grandmas-cookbook/assets/dishsmall_02.png",
+    2: "grandmas-cookbook/assets/dishsmall_03.png",
+    3: "grandmas-cookbook/assets/dishsmall_03.png",
+    2: "grandmas-cookbook/assets/dishsmall_03.png",
+};
 
 
 const recipeDescrip = {
@@ -45,15 +68,15 @@ const recipeDescrip = {
     ],
   
     2: [
-      "Dali Thoy, a Konkani Style Dal is a simple Indian Vegan Dal recipe made with minimal ingredients and under 30 minutes.Rice"
+      "Dali Thoy, a Konkani Style Dal is a simple Indian Vegan Dal recipe made with minimal ingredients and under 30 minutes."
     ],
   
     3: [
-        "Dali Thoy, a Konkani Style Dal is a simple Indian Vegan Dal recipe made with minimal ingredients and under 30 minutes.Rice"
+        "Dali Thoy, a Konkani Style Dal is a simple Indian Vegan Dal recipe made with minimal ingredients and under 30 minutes."
     ],
   
     4: [
-        "Dali Thoy, a Konkani Style Dal is a simple Indian Vegan Dal recipe made with minimal ingredients and under 30 minutes.Rice"
+        "Dali Thoy, a Konkani Style Dal is a simple Indian Vegan Dal recipe made with minimal ingredients and under 30 minutes."
     ]
   };
 
@@ -78,7 +101,7 @@ const recipeTitle = {
 
 // let n = 0;
 // let headingContent = document.querySelectorAll('.heading');
-// console.log(headingContent);
+// console.log()
 
 // for (i in recipeTitle) {
 //     console.log(i);
@@ -140,17 +163,17 @@ const ingredients = {
   };
 
 
-let j = 0;
-let ingredientContent = document.querySelectorAll('.ingredients');
+// let j = 0;
+// let ingredientContent = document.querySelectorAll('.ingredients');
 
-for (i in ingredients) {
-    // console.log(ingredients[i])
-    var content = document.createElement('p');
-    content = ingredients[i];
-    console.log(content);
-    ingredientContent[j].textContent = content;
-    j++;
-}
+// for (i in ingredients) {
+//     // console.log(ingredients[i])
+//     var content = document.createElement('p');
+//     content = ingredients[i];
+//     console.log(content);
+//     ingredientContent[j].textContent = content;
+//     j++;
+// }
 
 
 

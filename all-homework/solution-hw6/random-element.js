@@ -126,3 +126,20 @@ function retrieveFromLocalStorage() {
     }
     console.log(cardArrayString);
 }
+
+
+
+
+
+
+//attempt to change the dish image when the suprise recipe is changed//
+const recipeImages = {
+    1: "assets/dishsmall_02.png",
+    2: "assets/dishsmall_03.png",
+    3: "assets/dishsmall_03.svg",
+    2: "assets/dishsmall_03.png",
+};
+
+console.log("Recipe Index:", t);
+let dishImage = document.querySelector('.dish');
+dishImage.src = recipeImages[t];
