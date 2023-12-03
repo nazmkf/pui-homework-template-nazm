@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta charset="UTF-8">
+
   <head>
-    <title>Page Title</title>
+    <title>Shanta & Sangeeta's Cookbook</title>
+    <meta charset="UTF-8">
 
     <!-- linking the stylesheets -->
     <link rel="stylesheet" href="../css-files/style.css" type="text/css">
     <link rel="stylesheet" href="../css-files/flipbook_style.css" type="text/css">
 
-    <!-- scripts for flipbook library -->
+    <!-- scripts for libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
     <script type="text/javascript" src="../js-files/turn.min.js" defer></script>
 
@@ -26,45 +27,54 @@
       <nav>
         <img id="logo" src="../assets/logo/logo_long.svg" alt="Chef's cap and The goodness of Konkani Randap"/>
         <div class="nav_text">
-        <p><span class="textActive"><a href="./index.html">HOME</a></span></p>
-        <p><span class="textInactive"><a href="./all-recipes.html">VIEW ALL RECIPES</a></span></p>
+        <p><a class="textActive" href="./index.html">HOME</a></p>
+        <p><span class="textInactive"><a href="#recipe_book">VIEW ALL RECIPES</a></span></p>
         <img src="../assets/icons/menu_icon.svg" alt="Menu icon"/>
       </div>
       </nav>
     </div> 
 
 
-    <div class="left_images">
-       <img id="background_01" src="../assets/background_texture/bg_combined_wave2.png" alt="Orange background bumpy texture in organic shape"/>
-       <img class="dish" src="../assets/main_dishes/dishsmall_01.svg" alt="Dish with red curry and vegetables"/>
-    </div>
- 
-    <div class="right_text">
-       <h1 class="title">Mangalore</h1>
-       <p class="brownSubtitle">recipes straight from grandma's kitchen</p>
- 
-       <h2 class="subtitleQues_black">What are you in the mood for today?</h2>
-       <p class="special_black">Click on suprise me and get today's recipe!</p>
-       <button class="suprise"> SUPRISE ME </button>
+    <div class="flexDiv">
+      <div class="left_images">
+         <img id="background_01" src="../assets/background_texture/bg_combined_wave2.png" alt="Orange background bumpy texture in organic shape"/>
+         <img class="dish" src="../assets/dishsmall_00.svg" alt="Dish with red curry and vegetables"/>
+      </div>
+      <div class="right_text">
+         <h1 class="title">Mangalore</h1>
+         <p class="brownSubtitle">recipes straight from grandma's kitchen</p>
+         <h2 class="subtitleQues_black">What are you in the mood for today?</h2>
+         <p class="special_black">Click on suprise me and get today's recipe!</p>
+         <button class="suprise"> SUPRISE ME </button>
+      </div>
     </div>
 
     <br> <br> <br>      <br> <br> <br>     <br> <br> <br>     <br> <br> <br>     <br> <br> <br>     <br> <br> <br>     <br> <br> <br>
-    <div class="recipe_book">
+    <div id="recipe_book">
 
-      <h2 class="subtitle_black_frontcenter">Grandma's Cookbook</h2>
+      <h2 id="subtitle_black_frontcenter">Grandma's Cookbook</h2>
 
       
       <div id="flipbook">
 
         <div id="frontCover">
-          <p class="fancyTextSmall">THE GOODNESS OF</p>
-          <p class="fancyText">konkani raandap</p>
-          <p> "The guide to get recipes straight from the kitchen"</p>
-          
-          <br> <br> <br> <br><br> <br><br> 
 
-          <p class="fancyTextSmall">For</p>
-          <p class="fancyTextSmall">Shanta & Sangeeta</p>
+          <img src="../assets/recipe_images/coverBg 1.svg"/>
+
+          <div id="frontCoverText">
+            <p class="coverSubtitle">THE GOODNESS OF</p>
+            <p class="coverTitle">konkani raandap</p>
+            <p class="coverBody">The guide to get recipes straight from the kitchen</p>
+            
+            <div>
+              <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+            </div>
+
+            <p class="coverSubtitleSmall">Recipes by</p>
+            <p class="coverSubtitle">Shanta & Sangeeta</p>
+            <p class="coverBody">A tribute to these amazing women</p>
+
+          </div>
         </div>
 
 
@@ -210,7 +220,7 @@
           </ul>
          </div>
 
-         <div class="recipe_second">
+        <div class="recipe_second">
 
           <p class="fancyText"> INSTRUCTIONS</p>
           <p class="fancyTextSmall">MAKE THE CURRY</p>
@@ -220,6 +230,9 @@
           <p class="fancyTextSmall">Heat 1/4 inch of oil in a large skillet over medium-high to 350°F. Stir together lime juice, turmeric, chile powder, salt, ginger, and garlic in a medium bowl. Add fish, and toss to evenly coat. Working in 2 batches, fry fish pieces in hot oil until golden brown and just done, about 1 minute and 30 seconds per side; drain on paper towels. Add fried fish to curry, and serve over basmati rice with lime wedges and kachumber (an onion, tomato, and cucumber) salad.</p>
         </div>
 
+        <div id="backCover">            
+          <img src="../assets/recipe_images/coverBg 2.png"/>
+        </div>
         
 
 
@@ -280,8 +293,6 @@
         <div class="textContent">
         </div> -->
 
-
-        <div class="hard"></div>
       </div>
   
 
@@ -292,9 +303,9 @@
       <!-- <img id="book" src="../assets/recipe_book_bg/Group 26.svg" alt="Closed book with vintage looking cover reads The Goodness of Konkani randaap"> -->
        
       <div class="flip_arrows">
-        <img class="arrow_icon" src="../assets/icons/arrow_left.svg" alt="Arrow pointing to the left"/>
-        <p class="regular_black">Click to flip the pages & explore more recipes</p>
-        <img class="arrow_icon" src="../assets/icons/arrow_right.svg" alt="Arrow pointing to the right"/>
+        <!-- <img class="arrow_icon" src="../assets/icons/arrow_left.svg" alt="Arrow pointing to the left"/> -->
+        <p class="light_black">CLICK ON THE CORNERS TO FLIP THE PAGE</p>
+        <!-- <img class="arrow_icon" src="../assets/icons/arrow_right.svg" alt="Arrow pointing to the right"/> -->
       </div>
     </div>
 
@@ -314,17 +325,15 @@
 
 
 
-    <footer class="footer">
-      <img src="../assets/icons/Group 42.svg" alt="orange footer bar"/>
-      <!-- <img class="footer_rect" src="../assets/icons/footer_rectangle.svg" alt="orange footer bar"/>
-      <p class="footer_text"> Made with ❤️ by Nazm for Aaie and Amma ||  Feel free to get in touch here to ask any questions about my culture :)</p> -->
+    <footer id="footer">
+      <!-- <img src="../assets/icons/Group 42.svg" alt="orange footer bar"/> -->
+      <img src="../assets/icons/footer_rectangle.svg" alt="orange footer bar"/>
+      <p id="footerText"> Made with ❤️ by Nazm for Aaie and Amma ||  Feel free to get in touch <a href="mailto:nfurnitu@andrew.cmu.edu">here</a> here </a> to ask any questions about my culture.</p>
     </footer>
 
     <!-- javascript for flipbook  -->
     <script type="text/javascript" src="../recipes/recipes.js" defer></script>
-    <!-- <script type="text/javascript">
-      $('#flipbook').height
-    </script> -->
+
     
 
   </main>

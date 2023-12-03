@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Capriola&family=PT+Sans:ital,wght@0,400;0,700;1,700&family=Syne+Tactile&display=swap');
+
+body {
+    margin: 0;
+    width: 100vw;
+}
+
+
+/* hero div properties */
+.hero_section {
+    margin: 0;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+}
+
+/* navigation bar properties */
+.navbar {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff; /* Specify your background color */
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.nav_text {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 100%;
+}
+
+
+.textActive{
+    font-size: 20px;
+    font-weight: 600px;
+    font-family: "Barlow";
+    position: relative;
+    padding-bottom: 8px;
+    border-bottom-style: solid;
+    border-bottom-width: 3.1px;
+    border-bottom-color: rgb(233, 91, 75);
+    width: fit-content;
+}
+
+.textInactive {
+    font-size: 20px;
+    font-weight: 400px;
+    font-family: "Barlow";
+    text-align: center;
+}
+
+/* anchor tag style for all links */
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+ 
+/* image properties*/
+#background_01 {
+    z-index: -1;
+    position: absolute;
+    margin:0px;
+}
+
+.dish {
+    /* left: 0px;
+    top: 82px;*/
+    left: 0px;
+}
+
+
+
+/*right text group properties*/
+.right_text {
+    padding-top: 300px;
+    padding-left: 100px;
+}
+
+.left_images {
+    padding-right: 100px;
+}
+
+.title {
+    color: rgba(123, 55, 2, 1);
+    font-family: "Capriola";
+    font-size: 73px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin:0px;
+}
+
+.brown {
+    color: rgba(123, 55, 2, 1);
+    font-family: "Capriola";
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 5px;
+    margin-bottom: 55px;
+}
+
+.brownSubtitle {
+    color: rgba(123, 55, 2, 1);
+    font-family: "Capriola";
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 5px;
+    margin-bottom: 55px;
+}
+
+.subtitle_black {
+    color: rgb(0, 0, 0);
+    font-family: "Capriola";
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 5px;
+}
+
+.subtitleQues_black {
+    color: rgb(0, 0, 0);
+    font-family: "Capriola";
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 65px;
+    margin-bottom: 5px;
+}
+
+#subtitle_black_frontcenter {
+    z-index: 1;
+    text-align: center;
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-family: "Capriola";
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 5px;
+}
+
+.regular_black {
+    color: rgb(0, 0, 0);
+    font-family: "Barlow";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.special_black {
+    color: rgb(0, 0, 0);
+    font-family: "Barlow";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: -3px;
+    margin-bottom: 15px;
+}
+
+.fancyTextSmall {
+    color: rgb(0, 0, 0);
+    font-family: "Barlow";
+    font-size: 14px;
+    padding-left: 45px;
+    padding-right: 45px;
+    text-align: left;
+    margin-top: 5px;;
+    margin-bottom: 30px;;
+}
+
+.fancyTextLarge {
+    color: rgb(0, 0, 0);
+    font-family: "Syne Tactile";
+    font-size: 35px;
+    font-weight: 600;
+    padding-left: 45px;
+    padding-right: 45px;
+    margin-top: 35px;
+    text-align: left;
+}
+
+.fancyText {
+    color: rgb(0, 0, 0);
+    font-family: "Syne Tactile";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-left: 45px;
+    padding-right: 45px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+ul {
+    margin-left: 15px;
+    padding-right: 45px;
+    text-align: left;
+}
+
+hr{
+    margin-left: 45px;
+    margin-right: 35px;
+    margin-bottom: 15px;
+}
+
+.individualImage {
+    padding-left: 45px;
+    padding-right: 45px;
+    text-align: center;
+}
+
+.light_black {
+    color: rgb(0, 0, 0);
+    font-family: "Barlow";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+#footer {
+    position: relative;
+    display: inline-block;
+}
+
+#footer .img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#footerText {
+    position: absolute;
+    top: 26%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: #000000; 
+    padding: 10px 20px; 
+    text-align: center;
+    width: 100%;
+    font-family: Barlow;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+a {
+    text-decoration: underline;
+    color: rgb(233, 91, 75);
+}
+
+a .textInactive {
+    font-size: 20px;
+    font-weight: 400px;
+    font-family: "Barlow";
+    text-align: center;
+}
+
+button {
+    color: rgb(255, 255, 255);
+    background: rgb(233, 91, 75);
+    border: none;
+    font-family: "Barlow";
+    font-size: 23px;
+    border-radius: 18px;
+    width: 242px;
+    height: 54.546px;
+    flex-shrink: 0;
+}
+
+.newButton {
+    color: rgb(233, 91, 75);
+    background: rgb(255, 255, 255);
+    text-align: left;
+    align-items: start;
+    font-family: "Barlow";
+    font-size: 23px;
+    text-decoration: underline;
+}
+
+
+/* recipe book properties */
+#recipe_book {
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    color: rgb(0, 0, 0);
+    font-family: "Barlow";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.recipe_first { 
+    text-align: left;
+}
+
+.recipe_second {
+    padding-top: 30px;
+    text-align: left;
+}
+
+.flip_arrows {
+    display: flex;
+    flex-direction: row;
+}
+
+.arrow_icon {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.about_cooks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1223px;
+    margin: 150px;
+    padding-top: 370px;
+}
+
+.personal_text {
+    width: 600px;
+}
+
+#flipbook-container {
+    background-color: brown;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* cover page component design properties */
+.coverSubtitle {
+    color: rgb(0, 0, 0);
+    font-family: "Syne Tactile";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    padding-left: 45px;
+    padding-right: 45px;
+    text-align: center;
+    margin-bottom: 2px;
+    margin-top: 0px;
+}
+
+.coverSubtitleSmall {
+    color: rgb(0, 0, 0);
+    font-family: "Syne Tactile";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 00;
+    line-height: normal;
+    padding-left: 45px;
+    padding-right: 45px;
+    text-align: center;
+    margin-bottom: 2px;
+    margin-top: 0px;
+}
+
+.coverTitle {
+    color: rgb(0, 0, 0);
+    font-family: "Syne Tactile";
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-left: 45px;
+    padding-right: 45px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.coverBody {
+    color: rgb(0, 0, 0);
+    font-family: "Barlow";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 200;
+    padding-left: 45px;
+    padding-right: 45px;
+    text-align: center;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+#frontCover {
+    position: relative;
+    display: inline-block;
+}
+
+#frontCover .img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#frontCoverText {
+    position: absolute;
+    top: 51%; 
+    left: 56%; 
+    transform: translate(-50%, -50%); 
+    color: #fff; 
+    padding: 10px 20px; 
+    text-align: center;
+    width: 100%;
+}
+
+#backCover {
+    display: block;
+    width: 2%;
+    height: auto;
+}
+
+
+/* 
+#flipbook .page-wrapper{
+    -webkit-perspective:2000px;
+    -moz-perspective:2000px;
+    -ms-perspective:2000px;
+    -o-perspective:2000px;
+    perspective:2000px;
+}
+
+#flipbook .hard{
+    background:#ccc !important;
+    color:#333;
+    -webkit-box-shadow:inset 0 0 5px #666;
+    -moz-box-shadow:inset 0 0 5px #666;
+    -o-box-shadow:inset 0 0 5px #666;
+    -ms-box-shadow:inset 0 0 5px #666;
+    box-shadow:inset 0 0 5px #666;
+    font-weight:bold;
+}
+
+#flipbook .odd{
+    background:-webkit-gradient(linear, right top, left top, color-stop(0.95, #FFF), color-stop(1, #DADADA));
+    background-image:-webkit-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:-moz-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:-ms-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:-o-linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    background-image:linear-gradient(right, #FFF 95%, #C4C4C4 100%);
+    -webkit-box-shadow:inset 0 0 5px #666;
+    -moz-box-shadow:inset 0 0 5px #666;
+    -o-box-shadow:inset 0 0 5px #666;
+    -ms-box-shadow:inset 0 0 5px #666;
+    box-shadow:inset 0 0 5px #666;
+    
+}
+
+#flipbook .even{
+    background:-webkit-gradient(linear, left top, right top, color-stop(0.95, #fff), color-stop(1, #dadada));
+    background-image:-webkit-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:-moz-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:-ms-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:-o-linear-gradient(left, #fff 95%, #dadada 100%);
+    background-image:linear-gradient(left, #fff 95%, #dadada 100%);
+    -webkit-box-shadow:inset 0 0 5px #666;
+    -moz-box-shadow:inset 0 0 5px #666;
+    -o-box-shadow:inset 0 0 5px #666;
+    -ms-box-shadow:inset 0 0 5px #666;
+    box-shadow:inset 0 0 5px #666;
+} */

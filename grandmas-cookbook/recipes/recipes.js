@@ -13,23 +13,18 @@ console.log(randomRecipe);
 let supriseMe = document.querySelector('.suprise');
 supriseMe.addEventListener("click", chosenRecipe);
 
+// let newButtonFunc = document.querySelector('.newButton');
+// newButtonFunc.addEventListener("click", chosenRecipe);
+
 function chosenRecipe(){
 
-    // let a = document.createElement('p');
-    // a.textContent = recipeTitle[t];
-    
-    // let chosenRecipeText = document.querySelector('.rightText');
-    // chosenRecipeText.appendChild(a);
-
-    let t = randomRecipe;    
+    let t = getRandomInt(4) + 1;    
     let newTitle = document.querySelector('.title');
     newTitle.textContent = recipeTitle[t];
 
     let newSubtitle = document.querySelector('.brownSubtitle');
     newSubtitle.textContent = 'is todays chosen recipe';
 
-    let newDescrip = document.querySelector('.special_black');
-    newDescrip.textContent = recipeDescrip[t] + "Want to see another recipe?";
     
         // // Create a new span for the additional text
         // let additionalText = document.createElement('span');
@@ -42,23 +37,29 @@ function chosenRecipe(){
         // newDescrip.appendChild(additionalText);
 
     let newQues = document.querySelector('.subtitleQues_black');
-    newQues.textContent = '';
+    newQues.textContent = recipeDescrip[t];
+    newQues.classList.add('regular_black');
+
+    let newDescrip = document.querySelector('.special_black');
+    newDescrip.textContent = "Flip to page " + [t] + " to view the recipe. Want to see another recipe?";
 
     let supriseButton = document.querySelector('.supriseMe');
     supriseMe.textContent = "Let's try again";
+    supriseMe.classList.remove('button');
     supriseMe.classList.add('newButton');
 
-    console.log("Recipe Index:", t);
+    console.log("Recipe Index:", typeof(t));
     let dishImage = document.querySelector('.dish');
+    console.log(recipeImages[t])
     dishImage.src = recipeImages[t];
 }
 
 //attempt to change the dish image when the suprise recipe is changed//
 const recipeImages = {
-    1: "grandmas-cookbook/assets/dishsmall_02.png",
-    2: "grandmas-cookbook/assets/dishsmall_03.png",
-    3: "grandmas-cookbook/assets/dishsmall_03.png",
-    2: "grandmas-cookbook/assets/dishsmall_03.png",
+    '1': "../assets/dishsmall_01.png",
+    '2': "../assets/dishsmall_02.svg",
+    '3': "../assets/dishsmall_03.svg",
+    '4': "../assets/dishsmall_04.svg",
 };
 
 
@@ -68,15 +69,15 @@ const recipeDescrip = {
     ],
   
     2: [
-      "Dali Thoy, a Konkani Style Dal is a simple Indian Vegan Dal recipe made with minimal ingredients and under 30 minutes."
+      "Surnoli is a type of sweet dosa which is prepared by grinding rice with poha, grated coconut, buttermilk, and jaggery. It is an authentic South Canara breakfast dish."
     ],
   
     3: [
-        "Dali Thoy, a Konkani Style Dal is a simple Indian Vegan Dal recipe made with minimal ingredients and under 30 minutes."
+      "Pathrado is a Konkani cuisine delicacy. They are pinwheels prepared using colocasia leaves. Also called as pathrode in Kannada, alva panna pathrado in Konkani."
     ],
   
     4: [
-        "Dali Thoy, a Konkani Style Dal is a simple Indian Vegan Dal recipe made with minimal ingredients and under 30 minutes."
+      "Surmai Kalvan, a typical Konkani Seer fish preparation dish that is quite a regular in a Konkani household and forms part of our comfort meal when accompanied with steamed rice."
     ]
   };
 
@@ -87,15 +88,15 @@ const recipeTitle = {
     ],
   
     2: [
-      "Daal Rice"
-    ],
-  
-    3: [
       "Surnoli Dosa"
     ],
   
+    3: [
+      "Kadgi Gashi"
+    ],
+  
     4: [
-      "Kadgi Ghashi"
+      "Surmai Fish Kadi"
     ]
   };
 

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Responsive Shanta & Sangeeta's Cookbook </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <!-- linking the stylesheets -->
+    <link rel="stylesheet" href="../css-files/style.css" type="text/css">
+    <link rel="stylesheet" href="../css-files/flipbook_style.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- scripts for libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script type="text/javascript" src="../js-files/turn.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- script for flipbook functionality in js -->
+    <script type="text/javascript" src="../js-files/flipbook.js" defer></script>
+  </head>
+
+
+  
+  <body>
+
+  <main>
+    <div class="container-fluid hero_section">
+      <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#">
+              <img id="logo" src="../assets/logo/logo_long.svg" alt="Chef's cap and The goodness of Konkani Randap"/>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <img src="../assets/icons/menu_icon.svg" alt="Menu icon"/>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <a class="nav-link textActive" href="./index.html">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link textInactive" href="#recipe_book">VIEW ALL RECIPES</a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+  
+      <div class="row">
+          <div class="col-md-6 left_images">
+              <img id="background_01" src="../assets/background_texture/bg_combined_wave2.png" alt="Orange background bumpy texture in organic shape"/>
+              <img class="dish" src="../assets/main_dishes/dishsmall_01.svg" alt="Dish with red curry and vegetables"/>
+          </div>
+      
+          <div class="col-md-6 right_text">
+              <h1 class="title">Mangalore</h1>
+              <p class="brownSubtitle">recipes straight from grandma's kitchen</p>
+      
+              <h2 class="subtitleQues_black">What are you in the mood for today?</h2>
+              <p class="special_black">Click on suprise me and get today's recipe!</p>
+              <button class="suprise"> SUPRISE ME </button>
+          </div>
+      </div>
+  </div>
+  
+    <br> <br> <br>      <br> <br> <br>     <br> <br> <br>     <br> <br> <br>     <br> <br> <br>     <br> <br> <br>     <br> <br> <br>
+    <div id="recipe_book">
+
+      <h2 id="subtitle_black_frontcenter">Grandma's Cookbook</h2>
+
+      
+      <div id="flipbook">
+
+        <div id="frontCover">
+
+          <img src="../assets/recipe_images/coverBg 1.svg"/>
+
+          <div id="frontCoverText">
+            <p class="coverSubtitle">THE GOODNESS OF</p>
+            <p class="coverTitle">konkani raandap</p>
+            <p class="coverBody">The guide to get recipes straight from the kitchen</p>
+            
+            <div>
+              <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+            </div>
+
+            <p class="coverSubtitleSmall">Recipes by</p>
+            <p class="coverSubtitle">Shanta & Sangeeta</p>
+            <p class="coverBody">A tribute to these amazing women</p>
+
+          </div>
+        </div>
+
+
+        <div class="recipe_first">
+          <p class="fancyTextLarge"> DALITHOY</p>
+
+          <hr>
+
+          <p class="fancyText"> INGREDIENTS</p>
+          <ul class="fancyTextSmall">
+            <li>½ Toor dal</li>
+            <li>2 cups, cup boiling water</li>
+            <li>½ tsp Turmeric</li>
+            <li>Few Curry leaves</li>
+            <li>½ tsp Cumin seeds</li>
+            <li>1 tsp Coconut Oil</li>
+            <li>1 tsp Mustard seeds</li>
+            <li>2 Green chillies</li>
+            <li>½ tsp Turmeric</li>
+            <li>1 inch Ginger Piece</li>
+            <li>To garnish Cilantro</li>
+          </ul>
+
+          <p class="fancyText"> PREPARATION</p>
+          <ul class="fancyTextSmall">
+            <li>Wash the toor dal and add 2 cups of water and turmeric powder. Pressure cook in your preferred way. Let the dal cool and mash it nicely.</li>
+            <li>Chop the green chilies, ginger, and cilantro."</li>
+          </ul>
+        </div>
+
+        <div class="recipe_second">
+
+          <p class="fancyText"> INSTRUCTIONS</p>
+          <img class="individualImage" src="../assets/recipe_images/image 7.svg" alt="yellow lentil soup in a white dish with a hand holding a spoon in it.">
+          <p class="fancyTextSmall">To begin with, in a pot, add the boiled dal, along with 1½ teaspoon salt (or to taste), 2 green chillies (slit in two halves), and 1 cup of water, to thin out the dal a bit.
+            Mix everything together, and heat the dal on medium flame, till it comes to a proper boil.
+            Then in a small tadka pan, lightly heat up 1½ tablespoon of ghee.
+            To it, add 1 teaspoon of mustard seeds, and wait for a few seconds, till it starts to crackle.
+            Now add 15 curry leaves, lightly roast it for a few seconds, then add ½ teaspoon of asafoetida powder (hing), mix it in, and let it roast for another few seconds, and then turn off the flame.
+            Add the tempering to the dal, which must have come to a proper boil by now, and mix it in.
+            Dalitoy is ready to be served. You can use roasted dry red chillies instead of green chillies if that’s what you prefer. You can also use red chillies in addition to green chillies, by adding red chillies in the tadka.</p>
+        </div>
+
+        <div class="recipe_first">
+          <p class="fancyTextLarge"> SURNOLI DOSA</p>
+
+
+          <hr>
+
+          <img class="individualImage" src="../assets/recipe_images/26mag-eat-image4-articleLarge-v2 1 22.svg" alt="cooked dosa with a bowl of chutney next to it">
+
+          <p class="fancyText"> INGREDIENTS</p>
+          <ul class="fancyTextSmall">
+            <li>1 cup Dosa rice</li>
+            <li>1/4 tsp Fenugreek seeds</li>
+            <li>5 cups Water</li>
+            <li>1/2 cup Poha (thin variety)/li>
+            <li> 1/2 cup Coconut (grated)</li>
+            <li>1/4 cup Jaggery</li>
+            <li>1/2 cup Buttermilk (sour)</li>
+            <li>1/2 tsp Salt</li>
+            <li>1/4 tsp Turmeric powder</li>
+            <li>1/4 tsp Cooking soda</li>
+          </ul>
+ 
+        </div>
+
+        <div class="recipe_second">
+          <p class="fancyText"> PREPARATION</p>
+          <p class="fancyTextSmall"> In a large vessel boil some water over high heat. Cover it with a lid or any flat plate and keep this vessel in a warm place. Now, place the bowl(dosa batter) on top of the vessel with hot water. Ferment for at least 8 to 10 hours.</p>
+          <p class="fancyTextSmall">OR</p>
+          <p class="fancyTextSmall">In a pressure cooker(do not heat), place the bowl with dosa batter, close the pressure cooker lid and keep it in a warm place to ferment for at least 8 to 10 hours.</p>    
+
+          <p class="fancyText"> INSTRUCTIONS</p>
+          <p class="fancyTextSmall">To a bowl add 1 cup dosa rice and 1/4 tsp fenugreek seeds. Pour 2 cups water and wash and drain it atleast 3 times.
+            Now add 3 cups water to the bowl with rice and fenugreekseeds. Take half cup poha in a bowl and add 1/2 cup water.
+            Soak both rice and poha for 4 hours.
+            Add the soaked rice and poha to a blender jar and add 1/2 cup grated coconut, 1/4 cup jaggery, 1/2 cup buttermilk.
+            Grind to a smooth but thick paste. Try not to add extra water while grinding.
+            Ferment the batter for 8 hours or overnight. Fermentation may take longer if you leave in a colder region.
+            To the fermented batter add 1/2 tsp salt, 1/4 tsp turmeric powder, 1/4 tsp cokking soda and mix well.
+            Heat a iron skillet on medium high heat and brush 1/2 tsp oil on the skillet.
+            Now pour a ladle of batter into the middle of the skillet(do not spread the batter).
+            Cover the skillet and cook for 3 minutes.
+            Add 1/2 tsp oil and flip the dosa and cook for 2 minutes.
+            Serve with ghee and chutney powder on the side.</p>
+        </div>
+
+        <div class="recipe_first">
+          <p class="fancyTextLarge"> PATHRODE ROLLS</p>
+
+          <hr>
+
+          <p class="fancyText"> INGREDIENTS</p>
+          <ul class="fancyTextSmall">
+            <li>5 colocasia/collard greens</li>
+            <li>3/4 cup fresh/frozen coconut/li>
+            <li>1/4 cup toor dal</li>
+            <li>1 tbsp rice</li>
+            <li> 1 tsp urad dal</li>
+            <li>1/2 tsp coriander seeds</li>
+            <li>1 tsp jaggery</li>
+            <li>4-5 red chillies</li>
+            <li>1/2 tsp tamarind</li>
+            <li>A pinch asafoetida</li>
+            <li>Oil</li>
+            <li>1/2 tsp salt</li>
+            <li>1/4 tsp Cooking soda</li>
+            <li>1/4 tsp Cooking soda</li>
+          </ul>
+ 
+        </div>
+
+        <div class="recipe_second">
+          <img class="individualImage" src="../assets/recipe_images/image 8.svg" alt="cooked rolls of leaves with a bowl of green garnishing">
+
+          <p class="fancyText"> INSTRUCTIONS</p>
+          <p class="fancyTextSmall">Soak toor dal in water for about half an hour. Heat oil and fry urad dal, asafoetida and coriander seeds. Grind them with coconut, rice, soaked dal, tamarind, jaggery, red chillies and salt without adding water (if required, add very little water). Remove the thick veins of the leaves. With the help of pestle, slightly crush all the veins(this makes rollong and cooking easier). Apply a layer of masala on the leaf. Keep another leaf on te first leaf and repeat till all the leaves have a masala coating on them. Roll them. Cut with a sharp knife to thin rounds and arrange them in a vessel (preferably use the vessels that comes with cooker).</p>
+          <p class="fancyTextSmall">Steam them for around 15min. Leave cooker/steamer for another 10min before taking out the pathrado. Serve with or without coconut oil. Any left over pathrados are rolled in sooji/rava and fried on the tava (since they become a bit hard when refrigerated) before serving for the next meal, to make them soft and fresh.</p>
+        </div>
+
+        <div class="recipe_first">
+          <p class="fancyTextLarge"> SURMAI FISH KADI</p>
+
+          <hr>
+
+          <img class="individualImage" src="../assets/recipe_images/image 9.svg" alt="cooked rolls of leaves with a bowl of green garnishing">
+
+
+          <p class="fancyText"> INGREDIENTS</p>
+          <ul class="fancyTextSmall">
+            <li>6 to 8 chilies</li>
+            <li>1 tsp black peppercorns </li>
+            <li>1 tsp cumin seeds</li>
+            <li>1 tsp coriander seeds</li>
+            <li>1/4 cup water, plus more if needed</li>
+            <li>8 garlic cloves</li>
+            <li>1 tsp ground turmeric</li>
+            <li>10 fresh curry leaves, divided</li>
+            <li>1/4 cup vegetable oil</li>
+            <li>1 medium-size yellow onion, finely chopped (about 1 1/2 cups)</li>
+            <li>2 tsp kosher salt, divided</li>
+          </ul>
+         </div>
+
+        <div class="recipe_second">
+
+          <p class="fancyText"> INSTRUCTIONS</p>
+          <p class="fancyTextSmall">MAKE THE CURRY</p>
+          <p class="fancyTextSmall">Combine chiles, peppercorns, cumin seeds, and coriander seeds in a dry skillet. Cook over medium, stirring often, until fragrant, about 2 minutes. Place toasted spices in a blender; add 1/4 cup water, garlic, turmeric, and 5 curry leaves. Process until a thick paste forms, about 1 minute, adding more water, 1 tablespoon at a time, if needed to blend smoothly.  Heat oil in a large skillet over medium-high. Add onion, 1/2 teaspoon salt, and remaining 5 curry leaves. Cook, stirring often, until onion is translucent, 4 to 6 minutes. Stir in spice paste, and cook, stirring occasionally, until onion is browned, about 6 minutes. Stir in coconut milk, and bring to a boil. Reduce heat to medium-low, and simmer, stirring occasionally, until sauce is thick enough to coat the back of a spoon, about 25 minutes. Stir in lime juice and remaining 1 1/2 teaspoons salt.</p>
+
+          <p class="fancyTextSmall">MAKE THE FISH</p>
+          <p class="fancyTextSmall">Heat 1/4 inch of oil in a large skillet over medium-high to 350°F. Stir together lime juice, turmeric, chile powder, salt, ginger, and garlic in a medium bowl. Add fish, and toss to evenly coat. Working in 2 batches, fry fish pieces in hot oil until golden brown and just done, about 1 minute and 30 seconds per side; drain on paper towels. Add fried fish to curry, and serve over basmati rice with lime wedges and kachumber (an onion, tomato, and cucumber) salad.</p>
+        </div>
+
+        <div id="backCover">            
+          <img src="../assets/recipe_images/coverBg 2.png"/>
+        </div>
+        
+
+
+
+        <!-- attempt to popuplate all recipes from arrays -->
+        <!-- <div id="recipe01">
+          <div class="heading">
+          </div>
+
+          <div class="ingredients">
+          </div>
+    
+          <p class="prep"></p>
+        </div>
+
+        <div class="textContent">
+        </div>
+
+
+        <div id="recipe02">
+          <div class="heading">
+          </div>
+
+          <div class="ingredients">
+          </div>
+
+          <p class="prep"></p>
+        </div>
+
+        <div class="textContent">
+        </div>
+
+  
+        <div id="recipe03">
+          <div class="heading">
+          </div>
+
+          <div class="ingredients">
+          </div>
+
+          <p class="prep"></p>
+        </div>
+
+        <div class="textContent">
+        </div>
+
+  
+        <div id="recipe04">
+          <div class="heading">
+          </div>
+
+          <div class="ingredients">
+          </div>
+
+          <p class="prep"></p>
+        </div>
+
+        <div class="textContent">
+        </div> -->
+
+      </div>
+  
+
+      
+
+
+
+      <!-- <img id="book" src="../assets/recipe_book_bg/Group 26.svg" alt="Closed book with vintage looking cover reads The Goodness of Konkani randaap"> -->
+       
+      <div class="flip_arrows">
+        <!-- <img class="arrow_icon" src="../assets/icons/arrow_left.svg" alt="Arrow pointing to the left"/> -->
+        <p class="light_black">CLICK ON THE CORNERS TO FLIP THE PAGE</p>
+        <!-- <img class="arrow_icon" src="../assets/icons/arrow_right.svg" alt="Arrow pointing to the right"/> -->
+      </div>
+    </div>
+
+    <div class="about_cooks">
+      <div class="personal_text">
+       <h1 class="title">Get to know the cooks!</h1>
+       <p class="light_black">The mother - daughter duo based in Mumbai, India have the best granddaughter/daughter who contributes to the cooking process by relishing all their dishes and occasionally annoy them by eating the prepped ingredients before they can be used for cooking.</p>
+      </div>
+
+      <div class="personal_image">
+        <img src="../assets/personal_picture.svg" alt="A picture of Shanta gangolli and her granddaughter Nazm"/>
+      </div>
+    </div>
+
+
+
+
+
+
+    <footer id="footer">
+      <!-- <img src="../assets/icons/Group 42.svg" alt="orange footer bar"/> -->
+      <img src="../assets/icons/footer_rectangle.svg" alt="orange footer bar"/>
+      <p id="footerText"> Made with ❤️ by Nazm for Aaie and Amma ||  Feel free to get in touch <a href="mailto:nfurnitu@andrew.cmu.edu">here</a> here </a> to ask any questions about my culture.</p>
+    </footer>
+
+    <!-- javascript for flipbook  -->
+    <script type="text/javascript" src="../recipes/recipes.js" defer></script>
+
+    
+
+  </main>
+
+  </body>
+</html>
